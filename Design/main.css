@@ -1,0 +1,12 @@
+header
+{
+    font-size:x-large;
+    font-family:'Courier New';
+}
+body a
+{
+    font-size: xx-large;
+    color: white;
+    font-family:'Courier New';
+    text-decoration: none;
+}
