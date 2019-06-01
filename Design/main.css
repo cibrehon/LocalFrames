@@ -10,3 +10,24 @@ body a
     font-family:'Courier New';
     text-decoration: none;
 }
+p
+{
+    font-size: large;
+    color: white;
+    font-family:'Courier New';
+    text-decoration: none;
+}
+
+body.alternate
+{
+background-color: darkslategray;
+}
+
+a.alternate
+{
+    font-size: large;
+    color: white;
+    font-family:'Courier New';
+    text-decoration: none;
+}
+
