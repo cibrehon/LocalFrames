@@ -5,7 +5,7 @@ header
 }
 body a
 {
-    font-size: xx-large;
+    font-size: x-large;
     color: white;
     font-family:'Courier New';
     text-decoration: none;
@@ -31,3 +31,20 @@ a.alternate
     text-decoration: none;
 }
 
+a:hover {
+    color: red;
+  }
+
+button
+{
+    font-size: x-large;
+    color: white;
+    font-family:'Courier New';
+    padding:0!important;
+    display:block;
+    border: none;
+    background: none;
+    text-align: left;
+    text-decoration: none;
+
+}
