@@ -32,7 +32,7 @@ a.alternate
 }
 
 a:hover {
-    color: red;
+    color: rgb(255, 85, 85);
   }
 
 button
@@ -46,5 +46,12 @@ button
     background: none;
     text-align: left;
     text-decoration: none;
+    cursor: pointer;
 
+}
+
+div.dropdown
+{
+    display: none;
+    padding-left: 20px;
 }

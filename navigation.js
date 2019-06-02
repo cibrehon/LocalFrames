@@ -1,5 +1,5 @@
 
-var m_menuEntries = ["EGE ILICAK - STREET PHOTOGRAPHER <br>","+Portfolio", "Prints", "About", "Contact"];
+var m_menuEntries = ["EGE ILICAK - STREET PHOTOGRAPHER <br>","+Portfolio", "<br> Prints", "About", "Contact"];
 var m_menuLinks =   ["main.html","portfolio.html", "prints.html", "about.html", "contact.html"];
 
 var m_galleryEntires = ["Stories of Japan","Faces of Cuba", "Russia"];
@@ -7,6 +7,7 @@ var m_galleryLinks = ["japan.html","cuba.html","russia.html"];
 
 var m_galleryMenu = document.createElement("div");
 m_galleryMenu.id = "galleryMenu";
+m_galleryMenu.className = "dropdown";
 
 // Create links automatically based on m_menuEntries. 
 for (let index = 0; index < m_menuEntries.length; index++) 
@@ -54,3 +55,18 @@ function createSubGalleries()
    
 }
 
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("+Portfolio").onclick = function() {showAndHide()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function showAndHide() 
+{
+    if(m_galleryMenu.style.display == "block")
+    {
+        m_galleryMenu.style.display = "none";
+    }
+    else
+    {
+        m_galleryMenu.style.display = "block";
+    }
+}
