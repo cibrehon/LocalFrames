@@ -2,6 +2,14 @@
 var m_currentIndex = 1;
 ShowSlides(m_currentIndex);
 
+function SlideByKey()
+{
+  var x = event.which || event.keyCode;
+
+  if(x == 39) PlusSlides(1);
+  else if(x==37) PlusSlides(-1);
+}
+
 function PlusSlides(n)
 {
   ShowSlides(m_currentIndex += n);
@@ -24,3 +32,5 @@ function ShowSlides(n)
   dots[m_currentIndex-1].className += " active";
 }
 
+
+  
