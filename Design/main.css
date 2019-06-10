@@ -20,7 +20,7 @@ p
 
 body.alternate
 {
-background-color: darkslategray;
+background-color:black;
 }
 
 a.alternate
@@ -32,7 +32,7 @@ a.alternate
 }
 
 a:hover {
-    color: rgb(255, 85, 85);
+    color:  rgb(255,150,0);
   }
 
 button
@@ -55,3 +55,5 @@ div.dropdown
     display: none;
     padding-left: 20px;
 }
+
+.contain {object-fit: contain;}
