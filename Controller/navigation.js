@@ -3,7 +3,7 @@ var m_menuEntries = ["EGE ILICAK - STREET PHOTOGRAPHER <br>","+Portfolio", "<br>
 var m_menuLinks =   ["main.html","portfolio.html", "prints.html", "about.html", "contact.html"];
 
 var m_galleryEntires = ["Stories of Japan","Faces of Cuba", "Russia", "Turkey"];
-var m_galleryLinks = ["japan.html","cuba.html","russia.html", "portfolio.html"];
+var m_galleryLinks = ["japan.html","cuba.html","russia.html", "turkey.html"];
 
 var m_galleryMenu = document.createElement("div");
 m_galleryMenu.id = "galleryMenu";
