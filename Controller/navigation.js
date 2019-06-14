@@ -1,5 +1,5 @@
 
-var m_menuEntries = ["EGE ILICAK - STREET PHOTOGRAPHER <br>","+Portfolio", "<br> Prints", "About", "Contact"];
+var m_menuEntries = ["EGE ILICAK | STREET PHOTOGRAPHY <br>","+Portfolio", "<br> Prints", "About", "Contact"];
 var m_menuLinks =   ["main.html","portfolio.html", "prints.html", "about.html", "contact.html"];
 
 var m_galleryEntires = ["Stories of Japan","Faces of Cuba", "Russia", "Turkey"];
@@ -8,6 +8,7 @@ var m_galleryLinks = ["japan.html","cuba.html","russia.html", "turkey.html"];
 var m_galleryMenu = document.createElement("div");
 m_galleryMenu.id = "galleryMenu";
 m_galleryMenu.className = "dropdown";
+
 
 // Create links automatically based on m_menuEntries. 
 for (let index = 0; index < m_menuEntries.length; index++) 

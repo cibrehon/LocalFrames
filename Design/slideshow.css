@@ -1,6 +1,10 @@
 .mySlides 
 {
     display: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
 }
 
 /* Slideshow container */
@@ -10,6 +14,23 @@
     position: relative;
     margin: 0px;
 }
+
+/* Allow images to fit to their parent area. */
+.contain 
+{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.vertical-center 
+{
+    margin: auto;
+    position: relative;
+    top: 40%;
+    text-align: center;
+    
+  }
 
   /* Next & previous buttons */
 .prev, .next 

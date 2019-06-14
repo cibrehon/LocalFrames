@@ -1,46 +1,43 @@
-header
-{
-    font-size:x-large;
-    font-family: 'Courier New', Courier, monospace;
-}
-body a
+
+a, span
 {
     font-size: x-large;
     color: white;
-    font-family:'Courier New', Courier, monospace;
+    font-family: Courier, monospace;
     text-decoration: none;
 }
+
 p
 {
     font-size: large;
     color: white;
-    font-family:'Courier New', Courier, monospace;
-   
+    font-family:Courier, monospace;
     text-decoration: none;
 }
 
 body.alternate
 {
-background-color:black;
+    background-color: rgb(24,24,24);
 }
 
 a.alternate
 {
     font-size: large;
     color: white;
-    font-family:'Courier New', Courier, monospace;
+    font-family:Courier, monospace;
     text-decoration: none;
 }
 
-a:hover {
+a:hover 
+{
     color:  rgb(255,150,0);
-  }
+}
 
 button
 {
     font-size: x-large;
     color: white;
-    font-family:'Courier New', Courier, monospace;
+    font-family:Courier, monospace;
     padding:0!important;
     display:block;
     border: none;
@@ -50,12 +47,26 @@ button
     cursor: pointer;
 
 }
-
+/* Allows images to be shown sharper. */
+img 
+{
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;          /* Firefox */
+    image-rendering: -o-crisp-edges;            /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+}
 /* Properties of drown down (portfolio) menu button. */
-div.dropdown
+div.dropdown 
 {
     display: block;
     padding-left: 20px;
 }
-/* Allow images to fit to their parent area. */
-.contain {object-fit: contain;}
+
+/* Properties of the complete menu button. */
+div.navigation
+{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+   
