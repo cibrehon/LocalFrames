@@ -25,11 +25,11 @@
 
 .vertical-center 
 {
-    margin: auto;
-    position: relative;
-    top: 40%;
+    position: fixed;
+    top: 35%;
+    left: 25%;
+    right: 25%;
     text-align: center;
-    
   }
 
   /* Next & previous buttons */
