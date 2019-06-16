@@ -1,12 +1,25 @@
 
-a, span
+a
 {
     font-size: x-large;
     color: white;
     font-family: Courier, monospace;
     text-decoration: none;
 }
-
+span
+{
+    font-size: large;
+    color: rgb(220,220,220);
+    font-family: Courier, monospace;
+    text-decoration: none;
+}
+span.description
+{
+    font-size: large;
+    color: rgb(220,220,220);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
 p
 {
     font-size: large;
@@ -68,5 +81,10 @@ div.navigation
 {
     padding-left: 20px;
     padding-top: 20px;
+}
+
+img.social
+{
+    padding-top: 10px;
 }
    
