@@ -1,6 +1,6 @@
 
 var m_menuEntries = ["EGE ILICAK | STREET PHOTOGRAPHY <br>","+Portfolio", "<br> Prints", "About"];
-var m_menuLinks =   ["main.html","portfolio.html", "prints.html", "about.html"];
+var m_menuLinks =   ["index.html","portfolio.html", "prints.html", "about.html"];
 
 var m_galleryEntires = ["Stories of Japan","Faces of Cuba", "Russia"];
 var m_galleryLinks = ["japan.html","cuba.html","russia.html"];
