@@ -1,7 +1,7 @@
 a
 {
     font-size: x-large;
-    color: white;
+    color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
 }
@@ -42,7 +42,10 @@ a.alternate
 
 a:hover 
 {
-    color:  rgb(255,150,0);
+    /* for dark backgroungs use the following 
+    color:  rgb(255,150,0); 
+    */
+    color: darkred; 
 }
 
 button
