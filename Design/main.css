@@ -5,6 +5,23 @@ a
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
 }
+
+a.alternate
+{
+    font-size: large;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    /* for dark backgroungs use the following 
+    color:  rgb(255,150,0); 
+    */
+    color: darkred; 
+}
+
 span
 {
     font-size: x-large;
@@ -31,23 +48,6 @@ body.alternate
 {
     background-color: rgb(24,24,24);
 }
-
-a.alternate
-{
-    font-size: large;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-}
-
-a:hover 
-{
-    /* for dark backgroungs use the following 
-    color:  rgb(255,150,0); 
-    */
-    color: darkred; 
-}
-
 button
 {
     font-size: x-large;
@@ -90,3 +90,22 @@ img.social
     padding-top: 10px;
 }
    
+/*
+div.whitenavigation
+{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+div.whitenavigation a
+{
+
+    color: white;
+}
+div.whitenavigation a:hover
+{
+
+    color: darkred;
+}
+*/
