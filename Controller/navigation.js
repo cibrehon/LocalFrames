@@ -1,5 +1,5 @@
-var m_menuEntries = ["Stories of Japan", "Faces of Cuba", "<br> Prints", "About Me"];
-var m_menuLinks =   ["japan.html", "cuba.html", "prints.html", "about.html"];
+var m_menuEntries = ["Home", "Stories of Japan", "Faces of Cuba", "<br> Prints", "About Me"];
+var m_menuLinks =   ["index.html", "japan.html", "cuba.html", "prints.html", "about.html"];
 
 
 CreateMenuLinks();

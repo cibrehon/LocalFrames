@@ -12,11 +12,18 @@ html *
 span.cs_menu
 {
     font-size: xx-large;
-    color: black;
+    color:white;
     text-decoration: none;
     cursor: pointer;
-    left: 0;
-    top: 0;
+    display: block;
+ 
+}
+span.cs_menu_home
+{
+    font-size: xx-large;
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
     display: block;
  
 }

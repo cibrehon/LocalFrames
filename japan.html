@@ -2,20 +2,23 @@
 
     <!-- Set the general css settings for the whole page. -->
     <link rel="stylesheet" href="Design/main.css">
-    <link rel="stylesheet" href="Design/bgimage.css">
     <link rel="stylesheet" href="Design/slideshow.css">
     <link rel="stylesheet" href="Design/lightbox.css">
+    <link rel="stylesheet" href="Design/curtainmenu.css">
     
 <head>
        <title>Ege Ilicak</title>
 </head>
-<body onkeydown="SlideByKey()">
-       <div id = "menu" class="navigation"></div>
-       <script src="Controller/navigation.js"></script>
-      
+<body class="alternate" onkeydown="SlideByKey()">
 
-       <div id="ImageLightBox" class="modal">
-              <span class="close cursor" onclick="HideLightBox()">CLOSE</span>
+              <div id="ImageLightBox" class="modal">
+                            <span class="cs_menu" onclick="openNav()">&#9776; EGE ILICAK | Street Photography</span>
+                            <div id = "CurtainMenu" class="overlay">
+                                <a class="closebtn" onclick="closeNav()">&times;</a>
+                                <div id = "MainMenu" class="overlay-content"></div>
+                                <script src="Controller/navigation.js"></script>
+                            </div>
+              <span class="close cursor"></span>
               <div class="modal-content">
                      <div class="slideshow-container"">
                             <div class="mySlides fade" onclick="PlusSlides(1)"><span class="vertical-center">
