@@ -3,15 +3,19 @@
     <!-- Set the general css settings for the whole page. -->
     <link rel="stylesheet" href="Design/main.css">
     <link rel="stylesheet" href="Design/bgimage.css">
+    <link rel="stylesheet" href="Design/curtainmenu.css">
 
 <head>
     <title>Ege Ilicak</title>
 </head>
  <body>
     
-    <div id = "menu" class="navigation"></div>
-     <script src="Controller/navigation.js"></script>
+<span class="cs_menu" onclick="openNav()">&#9776; EGE ILICAK |</span>
+<div id = "CurtainMenu" class="overlay">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div id = "MainMenu" class="overlay-content"></div>
+    <script src="Controller/navigation.js"></script>
+</div>
        
  </body>  
-  
 </main>

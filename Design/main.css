@@ -1,67 +1,31 @@
-a
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+
+html *
 {
-    font-size: x-large;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+span.cs_menu
+{
+    font-size: xx-large;
     color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-}
-
-a.alternate
-{
-    font-size: large;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-}
-
-a:hover 
-{
-    /* for dark backgroungs use the following 
-    color:  rgb(255,150,0); 
-    */
-    color: darkred; 
-}
-
-span
-{
-    font-size: x-large;
-    color: rgb(220,220,220);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-}
-span.description
-{
-    font-size: x-large;
-    color: rgb(220,220,220);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-}
-p
-{
-    font-size: x-large;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    display: block;
+ 
 }
 
 body.alternate
 {
     background-color: rgb(24,24,24);
 }
-button
-{
-    font-size: x-large;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding:0!important;
-    display:block;
-    border: none;
-    background: none;
-    text-align: left;
-    text-decoration: none;
-    cursor: pointer;
 
-}
 /* Allows images to be shown sharper. */
 img 
 {
@@ -71,41 +35,9 @@ img
     image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
     -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
 }
-/* Properties of drown down (portfolio) menu button. */
-div.dropdown 
-{
-    display: block;
-    padding-left: 20px;
-}
-
-/* Properties of the complete menu button. */
-div.navigation
-{
-    padding-left: 20px;
-    padding-top: 20px;
-}
 
 img.social
 {
     padding-top: 10px;
 }
    
-/*
-div.whitenavigation
-{
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-
-div.whitenavigation a
-{
-
-    color: white;
-}
-div.whitenavigation a:hover
-{
-
-    color: darkred;
-}
-*/
