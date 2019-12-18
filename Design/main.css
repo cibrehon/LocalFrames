@@ -5,7 +5,7 @@ html *
 {
     color: white;
     font-family: 'IBM Plex Sans', sans-serif !important;
-    font-size: xx-large;
+    font-size: x-large;
     text-decoration: none;
 }
 
@@ -26,6 +26,14 @@ span.cs_menu_home
     cursor: pointer;
     display: block;
  
+}
+span.description
+{
+    position: fixed;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    text-align: left;
 }
 
 body.alternate

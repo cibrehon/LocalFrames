@@ -18,12 +18,12 @@
     margin: auto;
     padding: 0;
     width: 100%;
-    height: 85%;
+    height: 90%;
     cursor: pointer;
     padding-top: 25px;
   }
   
-  /* The Close Button */
+  /* The Close Button: obsolete. We use menu instead to navigate through portfolio
   .close 
   {
     color: gray;
@@ -41,4 +41,4 @@
     cursor: pointer;
   }
 
-  
+  */
