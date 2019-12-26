@@ -55,7 +55,7 @@ img.social
     padding-top: 10px;
 }
 
-@media screen and (max-height: 1100px) 
+@media screen and (max-height: 1000px) 
 {
     html *
     {
