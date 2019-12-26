@@ -1,4 +1,4 @@
-var m_menuEntries = ["Home", "Stories of Japan", "Faces of Cuba", "<br> Prints", "About Me"];
+var m_menuEntries = ["Home", "Stories of Japan", "Faces of Cuba", "<br> Prints", "About"];
 var m_menuLinks =   ["index.html", "japan.html", "cuba.html", "prints.html", "about.html"];
 
 
