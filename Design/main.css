@@ -73,4 +73,12 @@ img.social
         text-align: left;
         font-size: 45px;
     }
+
+    html *
+    {
+        color: white;
+        font-family: 'Lekton', sans-serif;
+        font-size: 45px;
+        text-decoration: none;
+    }
 }
