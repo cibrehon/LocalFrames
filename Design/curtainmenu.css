@@ -54,13 +54,12 @@
     cursor: pointer;
 }
 
-  
-  @media screen and (max-height: 1000px) 
-  {
-    .overlay a {font-size: 50px}
+@media (hover: none) and (pointer: coarse)
+{
+    .overlay a {font-size: 60px}
     .overlay .closebtn 
     {
-        font-size: 50px;
+        font-size: 60px;
         top: 15px;
         right: 35px;
     }
