@@ -63,4 +63,12 @@ img.social
         display: block;
         padding: 10px;
     }
+
+    html *
+    {
+        color: white;
+        font-family: 'Lekton', sans-serif;
+        font-size: 45px;
+        text-decoration: none;
+    }
 }
