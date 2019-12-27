@@ -57,7 +57,7 @@
   
   @media screen and (max-height: 1000px) 
   {
-    .overlay a {font-size: 40px}
+    .overlay a {font-size: 50px}
     .overlay .closebtn 
     {
         font-size: 50px;
