@@ -1,5 +1,5 @@
-var m_menuEntries = ["Home", "Stories of Japan", "Faces of Cuba", "<br> Prints", "About"];
-var m_menuLinks =   ["index.html", "japan.html", "cuba.html", "prints.html", "about.html"];
+var m_menuEntries = ["Home", "Stories of Japan", "Faces of Cuba", "<br> Contact", "About"];
+var m_menuLinks =   ["index.html", "japan.html", "cuba.html", "contact.html", "about.html"];
 
 
 CreateMenuLinks();
@@ -25,7 +25,7 @@ function CreateSocialMediaIcons()
 {
     var instagramLink = document.createElement("A");
     instagramLink.id = "instagram";
-    instagramLink.innerHTML = "<img class='social'; src='Resources/Social/instagram.png'>";
+    instagramLink.innerHTML = "<img class='social'; src='Resources/Social/instagram50.png'>";
     instagramLink.href = "https://www.instagram.com/local.frames/";
     instagramLink.target="_blank";
     document.getElementById("MainMenu").appendChild(instagramLink);
