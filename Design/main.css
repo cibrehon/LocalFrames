@@ -64,11 +64,13 @@ img.social
         padding: 10px;
     }
 
-    html *
+    span.description
     {
-        color: white;
-        font-family: 'Lekton', sans-serif;
-        font-size: 65px;
-        text-decoration: none;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        right: 20%;
+        text-align: left;
+        font-size: 45px;
     }
 }
