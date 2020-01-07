@@ -31,7 +31,7 @@ span.cs_menu
     padding: 10px;
     position: relative;
     z-index: 1;
-    width: 400px;
+    width: auto;
     /* Disable blue selection box */
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -85,7 +85,7 @@ img.social
         cursor: pointer;
         display: block;
         padding: 10px;
-        width: 400px;
+        width: auto;
         /* Disable blue selection box */
         -moz-user-select: none;
         -webkit-user-select: none;
