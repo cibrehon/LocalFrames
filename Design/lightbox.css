@@ -50,4 +50,11 @@
     right: 60px;
   }
 
- 
+  @media (hover: none) and (pointer: coarse)
+  {
+    .navigationBox
+    {
+      font-size: 40px;
+
+    }
+  }
