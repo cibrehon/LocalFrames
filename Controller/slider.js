@@ -29,7 +29,7 @@ function ShowSlides(n)
   }
 
   slides[m_currentIndex-1].style.display = "block";  
-  dots[m_currentIndex-1].className += " active";
+  dots[m_currentIndex-1].className += "active";
 }
 
 

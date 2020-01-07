@@ -1,25 +1,36 @@
 /* 
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap'); 
 font-family: 'IBM Plex Sans', sans-serif !important;
-*/
+
 @import url('https://fonts.googleapis.com/css?family=Lekton&display=swap');
+font-family: 'Lekton', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 html *
 {
     color: white;
-    font-family: 'Lekton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
-    text-decoration: none;
+    text-decoration: none;   
 }
-
 span.cs_menu
 {
-    font-size: 45px;
+    font-size: 40px;
     color:white;
     text-decoration: none;
     cursor: pointer;
     display: block;
     padding: 10px;
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    /* Disable blue selection box */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 span.description
@@ -45,6 +56,12 @@ img
     image-rendering: -o-crisp-edges;            /* Opera */
     image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
     -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+
+    /* Disable blue selection box */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 img.social
@@ -62,6 +79,12 @@ img.social
         cursor: pointer;
         display: block;
         padding: 10px;
+
+        /* Disable blue selection box */
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     span.description
@@ -77,7 +100,7 @@ img.social
     html *
     {
         color: white;
-        font-family: 'Lekton', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 45px;
         text-decoration: none;
     }

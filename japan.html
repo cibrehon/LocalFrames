@@ -10,7 +10,6 @@
        <title>Ege Ilicak</title>
 </head>
 <body class="alternate" onkeydown="SlideByKey()">
-
               <div id="ImageLightBox" class="modal">
                             <span class="cs_menu" onclick="openNav()">&#9776; EGE ILICAK</span>
                             <div id = "CurtainMenu" class="overlay">
@@ -18,7 +17,8 @@
                                 <div id = "MainMenu" class="overlay-content"></div>
                                 <script src="Controller/navigation.js"></script>
                             </div>
-              <span class="close cursor"></span>
+                            <span class="navigationBox nextBox" onclick="PlusSlides(1)">NEXT</span>
+                            <span class="navigationBox prevBox" onclick="PlusSlides(-1)">PREVIOUS</span>
               <div class="modal-content">
                      <div class="slideshow-container"">
                                     <div class="mySlides fade"><img class="contain" src="Resources/Photos/Japan/1_japan.jpg"; onclick="PlusSlides(1)"></div>     
