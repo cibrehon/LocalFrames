@@ -10,16 +10,17 @@
        <title>Ege Ilicak</title>
 </head>
 <body class="alternate" onkeydown="SlideByKey()">
+       <span class="cs_menu" onclick="openNav()">&#9776; EGE ILICAK</span>
+       <div id = "CurtainMenu" class="overlay">
+           <a class="closebtn" onclick="closeNav()">&times;</a>
+           <div id = "MainMenu" class="overlay-content"></div>
+           <script src="Controller/navigation.js"></script>
+       </div>
        <div id="ImageLightBox" class="modal">
-              <span class="cs_menu" onclick="openNav()">&#9776; EGE ILICAK</span>
-              <div id = "CurtainMenu" class="overlay">
-                  <a class="closebtn" onclick="closeNav()">&times;</a>
-                  <div id = "MainMenu" class="overlay-content"></div>
-                  <script src="Controller/navigation.js"></script>
-              </div>
+             
               <span class="navigationBox nextBox" onclick="PlusSlides(1)">NEXT</span>
               <span class="navigationBox prevBox" onclick="PlusSlides(-1)">PREVIOUS</span>
-              <div class="modal-content">
+              <div class="modal-content"> 
                      <div class="slideshow-container"">                     
                                     <div class="mySlides fade"><img class="contain" src="Resources/Photos/Cuba/1_cuba.jpg"; onclick="PlusSlides(1)"></div>
                                     <div class="mySlides fade"><img class="contain" src="Resources/Photos/Cuba/2_cuba.jpg" onclick="PlusSlides(1)"></div>

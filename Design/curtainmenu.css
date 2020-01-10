@@ -1,3 +1,5 @@
+
+
 .overlay
 {
     height: 100%;
@@ -27,6 +29,7 @@
     padding: 8px;
     text-decoration: none;
     font-size: 40px;
+    font-family: 'EB Garamond', serif;
     color: white;
     display: block;
     transition: 0.3s;
