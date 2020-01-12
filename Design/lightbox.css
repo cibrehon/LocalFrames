@@ -44,8 +44,8 @@
     -ms-user-select: none;
     user-select: none;
   }
-  .navigationBox:hover,
-  .navigationBox:focus {
+  .navigationBox:hover
+   {
     color: gray;
     text-decoration: none;
     cursor: pointer;
