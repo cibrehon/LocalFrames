@@ -52,6 +52,10 @@
 
   @media (hover: none) and (pointer: coarse)
   {
+    .modal-content 
+    {
+      padding-top: 50px;
+    }
     .navigationBox
     {
       font-size: 40px;
