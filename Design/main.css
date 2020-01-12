@@ -33,7 +33,7 @@ span.cs_menu
     padding: 10px;
     position: relative;
     z-index: 1;
-    width: auto;
+    width: 350px;
     /* Disable blue selection box */
     -moz-user-select: none;
     -webkit-user-select: none;
