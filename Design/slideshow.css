@@ -6,6 +6,12 @@
     width: 100%;
     position: relative;
 
+    /* Disable blue selection box */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 /* Slideshow container */
@@ -16,6 +22,12 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+
+    /* Disable blue selection box */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Allow images to fit to their parent area. */
