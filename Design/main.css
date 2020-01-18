@@ -82,7 +82,7 @@ img.social
 {
     span.cs_menu
     {
-        font-size: small;
+        font-size: large;
         color:white;
         text-decoration: none;
         cursor: pointer;
@@ -111,7 +111,7 @@ img.social
     {
         color: white;
         font-family: 'Montserrat', sans-serif;
-        font-size: small;
+        font-size: smaller;
         text-decoration: none;
     }
 }
