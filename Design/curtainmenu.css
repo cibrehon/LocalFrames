@@ -27,7 +27,7 @@
   {
     padding: 8px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'EB Garamond', serif;
     color: white;
     display: block;
@@ -58,7 +58,7 @@
 
 @media (hover: none) and (pointer: coarse)
 {
-    .overlay a {font-size: xx-large;}
+    .overlay a {font-size: 2.5rem;}
     .overlay .closebtn 
     {
         font-size: 60px;

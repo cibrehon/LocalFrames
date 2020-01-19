@@ -14,12 +14,12 @@ html *
 {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 100%;
     text-decoration: none;   
 }
 span.cs_menu
 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color:white;
     text-decoration: none;
     cursor: pointer;
@@ -40,10 +40,10 @@ span.description
     position: absolute;
     font-family: 'EB Garamond', serif;
     top: 30%;
-    left: 20%;
-    right: 20%;
-    text-align: left;
-    font-size: 25px;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    font-size: 1.6rem;
 }
 
 body.alternate
@@ -70,7 +70,6 @@ img
 img.social
 {
     padding-top: 10px;
-    width: auto;
 }
 
 .navigationBox
@@ -79,7 +78,7 @@ img.social
     color: white;
     z-index: 1;
     position: absolute;
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight: normal;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -97,7 +96,7 @@ img.social
 
 .prevBox
 { 
-right: 130px;
+right: 135px;
 }
 
 .nextBox
@@ -107,24 +106,12 @@ right: 60px;
 
 @media (hover: none) and (pointer: coarse)
 {
-    span.cs_menu
-    {
-        font-size: xx-large;
-    }
-
-    span.description
-    {
-        font-size: large;
-    }
-
     html *
     {
-        font-size: smaller;
+        font-size: 110%;
     }
-
-    .navigationBox
+    .navigationBox:hover
     {
-      font-size: large;
-
+        color: white;
     }
 }
