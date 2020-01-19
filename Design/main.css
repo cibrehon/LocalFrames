@@ -76,6 +76,7 @@ img
 img.social
 {
     padding-top: 10px;
+    width: auto;
 }
 
 @media (hover: none) and (pointer: coarse)
