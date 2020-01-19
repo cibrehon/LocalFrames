@@ -16,12 +16,6 @@ html *
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     text-decoration: none;   
-
-    /* Disable blue selection box */
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 span.cs_menu
 {
@@ -120,7 +114,7 @@ right: 60px;
 
     span.description
     {
-        font-size: medium;
+        font-size: large;
     }
 
     html *
