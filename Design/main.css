@@ -31,9 +31,9 @@ span.cs_menu
     cursor: pointer;
     display: block;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    width: 350px;
+    width: auto;
     /* Disable blue selection box */
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -79,12 +79,43 @@ img.social
     width: auto;
 }
 
+.navigationBox
+  {
+    display: block;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    font-size: 20px;
+    font-weight: normal;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 30px;
+  }
+.navigationBox:hover
+{
+color: gray;
+text-decoration: none;
+cursor: pointer;
+outline: none;
+}
+
+.prevBox
+{ 
+right: 130px;
+}
+
+.nextBox
+{
+right: 60px;
+}
+
 @media (hover: none) and (pointer: coarse)
 {
     span.cs_menu
     {
         font-size: xx-large;
-        width: 600px;
     }
 
     span.description
@@ -95,5 +126,15 @@ img.social
     html *
     {
         font-size: smaller;
+    }
+
+    .navigationBox
+    {
+      font-size: large;
+
+    }
+    .prevBox
+    { 
+      right: 200px;
     }
 }
