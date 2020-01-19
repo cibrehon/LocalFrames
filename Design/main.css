@@ -84,35 +84,16 @@ img.social
     span.cs_menu
     {
         font-size: xx-large;
-        color:white;
-        text-decoration: none;
-        cursor: pointer;
-        display: block;
-        padding: 10px;
         width: 600px;
-        /* Disable blue selection box */
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
     }
 
     span.description
     {
-        position: absolute;
-        font-family: 'EB Garamond', serif;
-        top: 20%;
-        left: 10%;
-        right: 10%;
-        text-align: left;
         font-size: medium;
     }
 
     html *
     {
-        color: white;
-        font-family: 'Montserrat', sans-serif;
         font-size: smaller;
-        text-decoration: none;
     }
 }
