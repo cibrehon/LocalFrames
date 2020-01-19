@@ -95,10 +95,10 @@ img.social
   }
 .navigationBox:hover
 {
-color: gray;
-text-decoration: none;
-cursor: pointer;
-outline: none;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
 }
 
 .prevBox

@@ -25,7 +25,7 @@ function CreateSocialMediaIcons()
 {
     var instagramLink = document.createElement("A");
     instagramLink.id = "instagram";
-    instagramLink.innerHTML = "<img class='social'; src='Resources/Social/instagram50.png'>";
+    instagramLink.innerHTML = "<img class='social'; src='Resources/Social/instagram.png'>";
     instagramLink.href = "https://www.instagram.com/local.frames/";
     instagramLink.target="_blank";
     document.getElementById("MainMenu").appendChild(instagramLink);
