@@ -7,16 +7,3 @@ html
     background-size: cover;
   
 }
-
-@media (hover: none) and (pointer: coarse) and (orientation: portrait)
-{
-    html 
-    { 
-        background: url("../Resources/Photos/mainvertical.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      
-    }
-}
