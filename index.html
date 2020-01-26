@@ -4,19 +4,42 @@
     <link rel="stylesheet" href="Design/main.css">
     <link rel="stylesheet" href="Design/bgimage.css">
     <link rel="stylesheet" href="Design/curtainmenu.css">
-
+    <link rel="stylesheet" href="Design/slideshow.css">
+    
 <head>
     <title>Ege Ilicak</title>
     <meta name="google-site-verification" content="45D1GVF2rjrbKqV84eEkvT6AadyhlfalHpBzB1VXkVA" />
 </head>
- <body>
+
+<body class="alternate" >
+
+
+<span class="coverpage">
     
+    <div class="single-slide show"><img class="cover" src="Resources/Photos/main1.jpg";></div>
+    <div class="single-slide hide"><img class="cover" src="Resources/Photos/main2.jpg";></div>
+    <div class="single-slide hide"><img class="cover" src="Resources/Photos/main3.jpg";></div>
+    <div class="single-slide hide"><img class="cover" src="Resources/Photos/main4.jpg";></div>
+    <div class="single-slide hide"><img class="cover" src="Resources/Photos/main5.jpg";></div>
+    <div class="single-slide hide"><img class="cover" src="Resources/Photos/main6.jpg";></div>
+    <div class="single-slide hide"><img class="cover" src="Resources/Photos/main7.jpg";></div>
+    <div class="single-slide hide"><img class="cover" src="Resources/Photos/main8.jpg";></div>
+    
+</span>
+
 <span class="cs_menu" onclick="openNav()">&#9776; EGE ILICAK</span>
 <div id = "CurtainMenu" class="overlay">
     <a class="closebtn" onclick="closeNav()">&times;</a>
     <div id = "MainMenu" class="overlay-content"></div>
     <script src="Controller/navigation.js"></script>
 </div>
-       
- </body>  
+
+<script src="Controller/slider.js"></script>
+
+<script type="text/javascript">
+   StartAutoSlideShow();
+</script>
+
+
+</body>  
 </main>
