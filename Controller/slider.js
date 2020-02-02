@@ -41,6 +41,6 @@ function StartAutoSlideShow()
 {
  // PlusSlides(1);
  SetNextIndex(1);
- setTimeout(StartAutoSlideShow, 4000);
+ setTimeout(StartAutoSlideShow, 3000);
 
 }
