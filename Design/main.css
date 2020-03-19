@@ -126,7 +126,11 @@ right: 60px;
     {
         font-size: 2rem;
     }
-
+    .prevBox
+    { 
+        right: 150px;
+    }
+    
     span.cs_menu 
     {
         font-size: 4rem;
