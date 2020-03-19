@@ -121,6 +121,7 @@ right: 60px;
     .navigationBox:hover
     {
         color: white;
+        font-size: 3rem;
     }
 
     span.cs_menu 
