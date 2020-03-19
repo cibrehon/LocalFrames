@@ -124,11 +124,15 @@ right: 60px;
     }
     .navigationBox
     {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     span.cs_menu 
     {
         font-size: 5rem;
+    }
+    span.cs_menu
+    {
+        font-size: 3rem;
     }
 }
