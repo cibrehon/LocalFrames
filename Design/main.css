@@ -123,5 +123,8 @@ right: 60px;
         color: white;
     }
 
-    span.cs_menu {font-size: 10rem;}
+    span.cs_menu 
+    {
+        font-size: 5rem;
+    }
 }
