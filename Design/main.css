@@ -121,6 +121,9 @@ right: 60px;
     .navigationBox:hover
     {
         color: white;
+    }
+    .navigationBox
+    {
         font-size: 3rem;
     }
 
