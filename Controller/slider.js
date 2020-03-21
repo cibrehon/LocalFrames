@@ -17,19 +17,9 @@ function SetNextIndex(dir)
 function SetNextIndexbyPosition(e)
 {
 
-  var xCoordinate = 200;
+
   
-  // If device is a touch screen device
-  if (isTouchDevice())
-  {
-    xCoordinate = e.touches[0].clientX;
-    alert("I am here:" + xCoordinate);
-  }
-  else
-  {
-    xCoordinate = e.clientX;
-  }
-  
+  xCoordinate = e.clientX;
   var direction = FindPosition(xCoordinate);
   ShowandHide(direction);
 }
