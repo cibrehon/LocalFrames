@@ -17,6 +17,7 @@ function SetNextIndex(dir)
 function SetNextIndexbyPosition(event)
 {
 
+  alert("Ege");
   var xCoordinate;
   
   // If device is a touch screen device
