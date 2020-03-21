@@ -23,7 +23,8 @@ function SetNextIndexbyPosition(e)
   if (isTouchDevice())
   {
     
-    xCoordinate= 5;
+    var touch = event.touches[0];
+    xCoordinate = touch.pageX;
     alert(xCoordinate.toString());
   }
   else
