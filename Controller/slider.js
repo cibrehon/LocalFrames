@@ -17,11 +17,10 @@ function SetNextIndex(dir)
 function SetNextIndexbyPosition(event)
 {
 
-  alert("Ege");
   var xCoordinate;
   
   // If device is a touch screen device
-  if ('ontouchstart' in window)
+  if (is_touch_device())
   {
     alert("Ege");
 ;    xCoordinate = event.touches[0].clientX;
@@ -74,4 +73,22 @@ function StartAutoSlideShow()
  SetNextIndex(1);
  setTimeout(StartAutoSlideShow, 3000);
 
+}
+
+function is_touch_device() {
+    
+  var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+  
+  var mq = function (query) {
+      return window.matchMedia(query).matches;
+  }
+
+  if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+      return true;
+  }
+
+  // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+  // https://git.io/vznFH
+  var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+  return mq(query);
 }
