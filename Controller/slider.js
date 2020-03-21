@@ -17,7 +17,7 @@ function SetNextIndex(dir)
 function SetNextIndexbyPosition(e)
 {
 
-  var xCoordinate = 0;
+  var xCoordinate = 200;
   
   // If device is a touch screen device
   if (isTouchDevice())
