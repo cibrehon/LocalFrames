@@ -24,7 +24,7 @@ function SetNextIndexbyPosition(e)
   {
     
     xCoordinate= 5;
-    alert("5");
+    alert(xCoordinate.toString());
   }
   else
   {
