@@ -22,10 +22,12 @@ function SetNextIndexbyPosition(event)
   // If device is a touch screen device
   if ('ontouchstart' in window)
   {
-    xCoordinate = event.touches[0].clientX;
+    alert("Ege");
+;    xCoordinate = event.touches[0].clientX;
   }
   else
   {
+    alert("EFE");
     xCoordinate = event.clientX;
   }
   
