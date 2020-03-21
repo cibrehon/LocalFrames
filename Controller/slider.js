@@ -24,6 +24,7 @@ function SetNextIndexbyPosition(event)
   {
     var touch = event.touches[0];
     xCoordinate= touch.pageX;
+    alert(xCoordinate);
   }
   else
   {
