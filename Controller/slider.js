@@ -14,7 +14,7 @@ function SetNextIndex(dir)
   ShowandHide(dir);
 }
 
-function SetNextIndexbyPosition(event)
+function SetNextIndexbyPosition(e)
 {
 
   var xCoordinate;
@@ -22,13 +22,13 @@ function SetNextIndexbyPosition(event)
   // If device is a touch screen device
   if (isTouchDevice())
   {
-    var touch = event.touches[0];
+    var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
     xCoordinate= touch.pageX;
     alert(xCoordinate);
   }
   else
   {
-    xCoordinate = event.clientX;
+    xCoordinate = e.clientX;
   }
   
   var direction = FindPosition(xCoordinate);
