@@ -17,12 +17,12 @@ function SetNextIndex(dir)
 function SetNextIndexbyPosition(e)
 {
 
-  var xCoordinate;
+  var xCoordinate = 0;
   
   // If device is a touch screen device
   if (isTouchDevice())
   {
-    alert("I am here");
+    alert("I am here:" + xCoordinate);
   }
   else
   {
