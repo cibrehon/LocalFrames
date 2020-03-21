@@ -9,13 +9,18 @@ function SlideByKey()
   else if(x==37) SetNextIndex(-1);
 }
 
-function SetNextIndex(event)
+function SetNextIndex(dir)
+{
+  ShowandHide(dir);
+}
+
+function SetNextIndexbyPosition(event)
 {
 
   var xCoordinate;
   
   // If device is a touch screen device
-  if ("ontouchstart" in document.documentElement)
+  if ('ontouchstart' in document.documentElement)
   {
     xCoordinate = event.touches[0].clientX;
   }
@@ -25,6 +30,12 @@ function SetNextIndex(event)
   }
   
   var direction = FindPosition(xCoordinate);
+  ShowandHide(direction);
+}
+
+function ShowandHide(dir)
+{
+  var direction = dir;
   var slideList = document.getElementsByClassName("single-slide");
   var length = slideList.length;
   
@@ -41,14 +52,12 @@ function SetNextIndex(event)
     m_currentIndexN = length - 1;
   }
   
-
   slideList[m_currentIndexN].classList.remove("hide");
   slideList[m_currentIndexN].classList.add("show");
 
   slideList[m_prevIndex].classList.remove("show");
   slideList[m_prevIndex].classList.add("hide");
 }
-
 
 function FindPosition(x)
 {
