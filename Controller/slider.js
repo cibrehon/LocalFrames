@@ -9,8 +9,13 @@ function SlideByKey()
   else if(x==37) SetNextIndex(-1);
 }
 
-function SetNextIndex(direction)
+function SetNextIndex(event)
 {
+  var x = event.clientX;
+
+  var direction = FindPosition(x);
+
+
   var slideList = document.getElementsByClassName("single-slide");
   var length = slideList.length;
   
@@ -36,6 +41,11 @@ function SetNextIndex(direction)
 }
 
 
+function FindPosition(x)
+{
+  var size = document.body.clientWidth;
+  if( x >= (size /2)){ return 1;} else { return -1;}
+}
 
 function StartAutoSlideShow()
 {
