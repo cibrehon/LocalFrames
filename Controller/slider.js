@@ -11,11 +11,20 @@ function SlideByKey()
 
 function SetNextIndex(event)
 {
-  var x = event.clientX;
 
-  var direction = FindPosition(x);
-
-
+  var xCoordinate;
+  
+  // If device is a touch screen device
+  if ("ontouchstart" in document.documentElement)
+  {
+    xCoordinate = event.touches[0].clientX;
+  }
+  else
+  {
+    xCoordinate = event.clientX;
+  }
+  
+  var direction = FindPosition(xCoordinate);
   var slideList = document.getElementsByClassName("single-slide");
   var length = slideList.length;
   
