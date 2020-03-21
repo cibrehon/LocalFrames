@@ -22,6 +22,7 @@ function SetNextIndexbyPosition(e)
   // If device is a touch screen device
   if (isTouchDevice())
   {
+    xCoordinate = e.touches[0].clientX;
     alert("I am here:" + xCoordinate);
   }
   else
