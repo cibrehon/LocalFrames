@@ -20,7 +20,7 @@ function SetNextIndexbyPosition(event)
   var xCoordinate;
   
   // If device is a touch screen device
-  if ('ontouchstart' in document.documentElement)
+  if ('ontouchstart' in window)
   {
     xCoordinate = event.touches[0].clientX;
   }
