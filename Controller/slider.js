@@ -9,22 +9,6 @@ function SlideByKey()
   else if(x==37) SetNextIndex(-1);
 }
 
-
-function RegisterTouchHandles() 
-{
-  // Get a reference to our touch-sensitive element
-  var touchzone = document.getElementById("slideshow-container");
-  // Add an event handler for the touchstart event
-  touchzone.addEventListener("touchstart", touchHandler, false);
-}
-
-function touchHandler(event) 
-{
-  // Get a reference to our coordinates div
-  var  xCoordinate = event.touches[0].pageX;
-  alert("Touch"); 
-}
-
 function SetNextIndex(dir)
 {
   ShowandHide(dir);
@@ -38,8 +22,7 @@ function SetNextIndexbyPosition(e)
   // If device is a touch screen device
   if (isTouchDevice())
   {
-    
-
+    alert("I am here");
   }
   else
   {
