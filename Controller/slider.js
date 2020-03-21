@@ -22,7 +22,7 @@ function touchHandler(event)
 {
   // Get a reference to our coordinates div
   var  xCoordinate = event.touches[0].pageX;
-  alert(`Result is:${xCoordinate}`); 
+  alert(xCoordinate); 
 }
 
 function SetNextIndex(dir)
