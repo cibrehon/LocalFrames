@@ -22,7 +22,8 @@ function SetNextIndexbyPosition(event)
   // If device is a touch screen device
   if (isTouchDevice())
   {
-    xCoordinate = event.changedTouches[0].pageX;
+    var touch = event.touches[0];
+    xCoordinate= touch.pageX;
   }
   else
   {
