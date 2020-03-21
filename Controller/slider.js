@@ -20,14 +20,12 @@ function SetNextIndexbyPosition(event)
   var xCoordinate;
   
   // If device is a touch screen device
-  if (is_touch_device())
+  if (isTouchDevice())
   {
-    alert("Ege");
-;    xCoordinate = event.touches[0].clientX;
+    xCoordinate = event.touches[0].clientX;
   }
   else
   {
-    alert("EFE");
     xCoordinate = event.clientX;
   }
   
@@ -75,7 +73,8 @@ function StartAutoSlideShow()
 
 }
 
-function is_touch_device() {
+function isTouchDevice() 
+{
     
   var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
   
