@@ -24,7 +24,7 @@ function SetNextIndexbyPosition(e)
   {
     
     xCoordinate= 5;
-    alert(xCoordinate);
+    alert("5");
   }
   else
   {
