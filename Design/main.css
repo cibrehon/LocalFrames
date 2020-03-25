@@ -26,7 +26,7 @@ span.cs_menu
     font-size: 2.5rem;
     color:white;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
     display: block;
     padding: 20px;
     position: absolute;
@@ -46,7 +46,7 @@ span.description
     top: 30%;
     left: 15%;
     right: 15%;
-    text-align: center;
+    text-align: left;
     font-size: 1.6rem;
 }
 
@@ -101,7 +101,7 @@ img.social
 {
     color: gray;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
     outline: none;
 }
 

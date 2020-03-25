@@ -26,7 +26,7 @@
   {
     padding: 8px;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Bebas Neue', cursive;
     color: white;
     display: block;
@@ -36,6 +36,7 @@
 .overlay-content a:hover, .overlay a:focus 
 {
     color: yellow;
+    cursor: default;
 }
   
 /* The Close Button */
@@ -45,14 +46,14 @@
     top: 20px;
     right: 45px;
     font-size: 4rem;
-    cursor: pointer;
+    cursor: default;
 }
 .closebtn:hover,
 .closebtn:focus 
 {
     color: yellow;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
 }
 
 @media (hover: none) and (pointer: coarse)

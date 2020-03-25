@@ -7,7 +7,7 @@
     height: 85%;
     padding-top: 5%;
     overflow: auto;
-    cursor: pointer;
+    cursor: default;
     margin: auto;
 
     /* Disable blue selection box */
