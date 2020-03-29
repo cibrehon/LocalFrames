@@ -58,7 +58,7 @@
 
 @media (hover: none) and (pointer: coarse) and (orientation: portrait)
 {
-    .overlay a {font-size: 3rem;}
+    .overlay a {font-size: 4rem;}
     .overlay .closebtn 
     {
         font-size: 7rem;
