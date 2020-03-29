@@ -23,7 +23,7 @@ html *
 }
 span.cs_menu
 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color:white;
     text-decoration: none;
     cursor: default;
@@ -115,7 +115,7 @@ right: 135px;
 right: 60px;
 }
 
-@media (hover: none) and (pointer: coarse)
+@media (hover: none) and (pointer: coarse) and (orientation: portrait)
 {
     .navigationBox:hover
     {
@@ -132,10 +132,35 @@ right: 60px;
     
     span.cs_menu 
     {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     span.description
     {
         font-size: 3rem;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) and (orientation: landscape)
+{
+    .navigationBox:hover
+    {
+        color: white;
+    }
+    .navigationBox
+    {
+        font-size: 2rem;
+    }
+    .prevBox
+    { 
+        right: 180px;
+    }
+    
+    span.cs_menu 
+    {
+        font-size: 3rem;
+    }
+    span.description
+    {
+        font-size: 2rem;
     }
 }

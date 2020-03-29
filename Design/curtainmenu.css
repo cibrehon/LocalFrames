@@ -56,7 +56,7 @@
     cursor: default;
 }
 
-@media (hover: none) and (pointer: coarse)
+@media (hover: none) and (pointer: coarse) and (orientation: portrait)
 {
     .overlay a {font-size: 3rem;}
     .overlay .closebtn 
@@ -67,6 +67,16 @@
     }
   }
 
+@media (hover: none) and (pointer: coarse) and (orientation: landscape)
+{
+    .overlay a {font-size: 2rem;}
+    .overlay .closebtn 
+    {
+        font-size: 5rem;
+        top: 15px;
+        right: 35px;
+    }
+  }
 
   
   
