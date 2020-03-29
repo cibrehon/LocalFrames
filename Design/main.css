@@ -117,10 +117,6 @@ right: 60px;
 
 @media (hover: none) and (pointer: coarse)
 {
-    html *
-    {
-        font-size: 100%;
-    }
     .navigationBox:hover
     {
         color: white;
@@ -136,7 +132,7 @@ right: 60px;
     
     span.cs_menu 
     {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     span.description
     {
