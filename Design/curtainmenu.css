@@ -58,7 +58,7 @@
 
 @media (hover: none) and (pointer: coarse)
 {
-    .overlay a {font-size: 2rem;}
+    .overlay a {font-size: 3rem;}
     .overlay .closebtn 
     {
         font-size: 7rem;
