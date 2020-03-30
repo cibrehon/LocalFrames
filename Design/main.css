@@ -15,7 +15,7 @@ font-family: 'Lekton', sans-serif;
 
 html *
 {
-    color: white;
+    color: black;
     font-family: 'Bebas Neue', cursive;
     font-size: 100%;
     text-decoration: none;   
@@ -23,8 +23,7 @@ html *
 }
 span.cs_menu
 {
-    font-size: 2.8rem;
-    color:white;
+    font-size: 2.5rem;
     text-decoration: none;
     cursor: default;
     display: block;
@@ -37,6 +36,15 @@ span.cs_menu
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.menu_main
+{
+    color:white;
+}
+.menu_gallery
+{
+    color:black;
 }
 
 span.description
@@ -52,7 +60,9 @@ span.description
 
 body.alternate
 {
-    background-color: rgb(24,24,24);
+   /*  background-color: rgb(24,24,24); */
+
+    background-color: white;
 }
 
 /* Allows images to be shown sharper. */
@@ -86,7 +96,7 @@ img.social
 .navigationBox
   {
     display: block;
-    color: white;
+    color: black;
     z-index: 1;
     position: absolute;
     font-size: 1.4rem;
