@@ -46,7 +46,7 @@ html.browser-safari .single-slide
 /* Allow images to fit to their parent area. */
 .contain 
 {
-    object-fit: none;
+    object-fit: scale-down;
     height: 100%;
     width: 100%;
 }
