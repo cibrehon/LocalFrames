@@ -58,10 +58,13 @@ span.description
     font-size: 1.6rem;
 }
 
+body
+{
+    background-color: rgb(24,24,24);
+}
+
 body.alternate
 {
-   /*  background-color: rgb(24,24,24); */
-
     background-color: white;
 }
 
