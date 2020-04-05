@@ -17,11 +17,20 @@
     user-select: none;
   }
 
-@media (hover: none) and (pointer: coarse)
+@media (hover: none) and (pointer: coarse) and (orientation: portrait)
 {
   .modal 
   {
     padding-top: 20%;
     height: 80%;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) and (orientation: landscape)
+{
+  .modal
+  {
+    padding-top: 10%;
+    height: 70%;
   }
 }
