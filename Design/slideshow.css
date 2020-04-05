@@ -47,10 +47,9 @@ html.browser-safari .single-slide
 .contain 
 {
     object-fit: scale-down;
-    /* 
     height: 100%;
     width: 100%;
-    */
+
 }
 .vertical-center 
 {
