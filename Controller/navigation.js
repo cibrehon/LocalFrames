@@ -34,7 +34,7 @@ function CreateSocialMediaIcons()
 
 function openNav() 
 {
-    document.getElementById("CurtainMenu").style.width = "100%";
+    document.getElementById("CurtainMenu").style.width = "20%";
 }
   
 function closeNav() 
