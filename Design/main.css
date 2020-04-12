@@ -16,7 +16,7 @@ font-family: 'Lekton', sans-serif;
 html *
 {
     color: black;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
     font-size: 100%;
     text-decoration: none;   
 
