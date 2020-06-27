@@ -1,0 +1,65 @@
+/*
+
+ Clean solution for animation problem which is a common problem for things like tooltips and modal popups with a 'fade-in' effect - 
+ is to not only transition between opacity, but also the "visibility" property. 
+ 
+ Unlike 'display', 'visibility' is an actual animatable property, 
+ and it will do the right thing in that it makes the element invisible (and non-responsive to input events) only before a transition begins, 
+ and only after a transition returns to the initial state.
+
+*/
+.MobileMenu
+{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.2s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.MobileMenu.show 
+{     
+
+    opacity: 1;
+    visibility: visible;
+    
+    /*
+    position: fixed;
+    opacity: 1;
+    
+   transition: opacity .4s ; 
+    z-index: 11;
+    visibility: visible;
+    */
+  
+}   
+.MobileMenu.hide
+{  
+
+    opacity: 0;
+    visibility: hidden;
+    /*
+    position: fixed;
+    opacity: 0;
+    transition: opacity .6s;
+    z-index: -1;
+    visibility: hidden;
+    */
+}   
+
+.MobileMenuContent 
+{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+

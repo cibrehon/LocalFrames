@@ -1,5 +1,6 @@
 var m_currentIndexN = 0;
 var m_prevIndex = 0;
+m_totalImageCount = 0;
 
 function SlideByKey()
 {
@@ -29,6 +30,8 @@ function ShowandHide(dir)
 {
   var direction = dir;
   var slideList = document.getElementsByClassName("single-slide");
+  var imageCounter = document.getElementById("IC");
+
   var length = slideList.length;
   
   m_prevIndex = m_currentIndexN;
@@ -44,6 +47,7 @@ function ShowandHide(dir)
     m_currentIndexN = length - 1;
   }
   
+  imageCounter.innerText =  m_currentIndexN + 1 + " / " + m_totalImageCount;
   slideList[m_currentIndexN].classList.remove("hide");
   slideList[m_currentIndexN].classList.add("show");
 
@@ -51,10 +55,16 @@ function ShowandHide(dir)
   slideList[m_prevIndex].classList.add("hide");
 }
 
+// Checks the mouse position on the x-axis. Returns 1 if mouse is on the right side, returns -1 for the left side
 function FindPosition(x)
 {
   var size = document.body.clientWidth;
   if( x >= (size /2)){ return 1;} else { return -1;}
+}
+
+function SetTotalImageCount(imageCount)
+{
+  m_totalImageCount = imageCount;
 }
 
 function StartAutoSlideShow()

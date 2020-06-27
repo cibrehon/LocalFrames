@@ -4,44 +4,45 @@
     <link rel="stylesheet" href="Design/main.css">
     <link rel="stylesheet" href="Design/slideshow.css">
     <link rel="stylesheet" href="Design/lightbox.css">
-    <link rel="stylesheet" href="Design/curtainmenu.css">
+    <link rel="stylesheet" href="Design/mobilemenu.css">
     
 <head>
-       <title>Ege Ilicak</title>
+       <title>Ege Ilicak - CUBA</title>
 </head>
-<body class="alternate" onkeydown="SlideByKey()">
-       <span class="cs_menu menu_gallery" onclick="openNav()">&#9776; EGE ILICAK</span>
-       <div id = "CurtainMenu" class="overlay">
-           <a class="closebtn" onclick="closeNav()">&times;</a>
-           <div id = "MainMenu" class="overlay-content"></div>
+<body onkeydown="SlideByKey()" onresize="CheckPageWidth()" >
+
+       <div class="headerMenu">
+           <span id="LeftMenu" class="leftMenu"><a href="index.html">EGE ILICAK </a></span>  
+           <span id="RightMenu" class="rightMenu" style="cursor: pointer;"></span>
+           <span id ="MobileMenu" class="MobileMenu">
+              <div id="MobileMenuContent" class="MobileMenuContent"></div>
+           </span>
            <script src="Controller/navigation.js"></script>
        </div>
-       <span class="navigationBox nextBox" onclick="SetNextIndex(1)">NEXT</span>
-       <span class="navigationBox prevBox" onclick="SetNextIndex(-1)">PREVIOUS</span>
-       <div id="ImageLightBox" class="modal">
-              <div class="slideshow-container"">                     
-                                   <div class="single-slide show"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/3.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
-                                   <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/1.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
-                                   <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/4.jpg" onclick="SetNextIndexbyPosition(event)"></div>
-                                   <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/5.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                  
-                                   <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/7.jpg" onclick="SetNextIndexbyPosition(event)"></div>
-                                   <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/8.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
-                                   <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/9.jpg" onclick="SetNextIndexbyPosition(event)"></div>
-                                   <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/10.jpg"; onclick="SetNextIndexbyPosition(event)"></div>           
-                                   <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/11.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                    
-
-                            <!-- Next & previous arrows, obsolete */
-                     <a class="prev" onclick="SetNextIndex(-1)">&#10094;</a>
-                     <a class="next" onclick="SetNextIndex(1)">&#10095;</a>
-                     -->
-                     </div>
-       </div>
-       <script src="Controller/slider.js"></script>
-       <script src="Controller/lightbox.js"></script>
-
        
+
+       <div id="ImageLightBox" class="lightbox">
+              <div class="titleBox"> Faces of Cuba </div>
+              <div class="single-slide show"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_1.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_2.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_3.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_4.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_5.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_6.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_7.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_8.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_9.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_10.jpg"; onclick="SetNextIndexbyPosition(event)"></div> 
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_11.jpg"; onclick="SetNextIndexbyPosition(event)"></div> 
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_12.jpg"; onclick="SetNextIndexbyPosition(event)"></div> 
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Cuba/cuba_13.jpg"; onclick="SetNextIndexbyPosition(event)"></div> 
+              <div id="IC" class="navigationBox" > 1 / 13 </div> <!-- Important: Set the total image count accordingly! -->   
+       </div>
+
+       <script src="Controller/slider.js"></script>
+       <script type="text/javascript"> SetTotalImageCount(13); </script>  <!-- Important: Set the total image count accordingly! -->
+     
  </body>  
-  
 </main>
 
 <!--December 2012. I was lucky enough to visit Cuba, unique country of Central America. My journey started from Havana and moved on to Pinar del Rio; which is then followed by a road trip until reaching to southern coast, Trinidad..

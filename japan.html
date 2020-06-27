@@ -4,59 +4,49 @@
     <link rel="stylesheet" href="Design/main.css">
     <link rel="stylesheet" href="Design/slideshow.css">
     <link rel="stylesheet" href="Design/lightbox.css">
-    <link rel="stylesheet" href="Design/curtainmenu.css">
+    <link rel="stylesheet" href="Design/mobilemenu.css">
     
 <head>
-       <title>Ege Ilicak</title>
+       <title>Ege Ilicak - JAPAN</title>
 </head>
-<body class="alternate" onkeydown="SlideByKey()">
-    <span class="cs_menu menu_gallery" onclick="openNav()">&#9776; EGE ILICAK</span>
-        <div id = "CurtainMenu" class="overlay">
-            <a class="closebtn" onclick="closeNav()">&times;</a>
-            <div id = "MainMenu" class="overlay-content"></div>
-            <script src="Controller/navigation.js"></script>
-        </div>
-        <span class="navigationBox nextBox" onclick="SetNextIndex(1)">NEXT</span>
-        <span class="navigationBox prevBox" onclick="SetNextIndex(-1)">PREVIOUS</span>
-        
-        <div id="ImageLightBox" class="modal">    
-                    <div class="slideshow-container"">
-                                <div class="single-slide show"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/1_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/2_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/3_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/4_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/6_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>   
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/5_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/7_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/8_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/9_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/10_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/11_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                        
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/13_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/14_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/15_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/17_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>              
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/19_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>      
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/20_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div> 
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/21_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>   
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/22_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>   
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/23_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/25_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>   
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/31_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>     
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/26_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/27_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/29_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
-                                <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/30_japan.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
-                        <!-- Next & previous arrows, obsolete */
-                        <a class="prev" onclick="SetNextIndex(-1)">&#10094;</a>
-                        <a class="next" onclick="SetNextIndexbyPosition(event)">&#10095;</a>
-                        -->
-                    </div>
+<body onkeydown="SlideByKey()" onresize="CheckPageWidth()" >
+
+       <div class="headerMenu">
+           <span id="LeftMenu" class="leftMenu"><a href="index.html">EGE ILICAK </a></span>  
+           <span id="RightMenu" class="rightMenu" style="cursor: pointer;"></span>
+           <span id ="MobileMenu" class="MobileMenu">
+              <div id="MobileMenuContent" class="MobileMenuContent"></div>
+           </span>
+           <script src="Controller/navigation.js"></script>
        </div>
+       
+
+       <div id="ImageLightBox" class="lightbox">
+              <div class="titleBox"> Japan </div>
+              <div class="single-slide show"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/1.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/2.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/3.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/4.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/5.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/6.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/7.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/8.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/9.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/10.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/11.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/12.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/13.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/14.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/15.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/16.jpg"; onclick="SetNextIndexbyPosition(event)"></div>        
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/17.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/18.jpg"; onclick="SetNextIndexbyPosition(event)"></div>    
+              <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Japan/19.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                                               
+              <div id="IC" class="navigationBox" > 1 / 19 </div> <!-- Important: Set the total image count accordingly! -->   
+       </div>
+
        <script src="Controller/slider.js"></script>
-       <script src="Controller/lightbox.js"></script>
+       <script type="text/javascript"> SetTotalImageCount(19); </script>  <!-- Important: Set the total image count accordingly! -->
+     
  </body>  
-  
 </main>
-
-

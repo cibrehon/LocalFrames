@@ -2,9 +2,10 @@
 
     <!-- Set the general css settings for the whole page. -->
     <link rel="stylesheet" href="Design/main.css">
-    <link rel="stylesheet" href="Design/bgimage.css">
-    <link rel="stylesheet" href="Design/curtainmenu.css">
+    <link rel="stylesheet" href="Design/whitelink.css">
     <link rel="stylesheet" href="Design/slideshow.css">
+    <link rel="stylesheet" href="Design/lightbox.css">
+    <link rel="stylesheet" href="Design/mobilemenu.css">
     
 <head>
     <!-- Primary Meta Tags -->
@@ -30,11 +31,24 @@
     <meta name="google-site-verification" content="45D1GVF2rjrbKqV84eEkvT6AadyhlfalHpBzB1VXkVA" />
 </head>
 
-<body>
+<body onkeydown="SlideByKey()" onresize="CheckPageWidth()" >
+
+<div class="headerMenu">
+    <span id="LeftMenu" class="leftMenu"><a href="index.html">EGE ILICAK </a></span>  
+    <span id="RightMenu" class="rightMenu" style="cursor: pointer;"></span>
+    <span id ="MobileMenu" class="MobileMenu">
+        <div id="MobileMenuContent" class="MobileMenuContent"></div>
+    </span>
+    <script src="Controller/navigation.js"></script>
+</div>
+
+<img src="../LocalFrames/Resources/Photos/3.jpg" class="cover" >
 
 
-<span class="coverpage">
+<!-- 
     
+ 
+<div id="ImageLightBox" class="lightbox.cover">
     <div class="single-slide show"><img oncontextmenu="return false;" class="cover" src="Resources/Photos/main1.jpg";></div>
     <div class="single-slide hide"><img oncontextmenu="return false;" class="cover" src="Resources/Photos/main5.jpg";></div>
     <div class="single-slide hide"><img oncontextmenu="return false;" class="cover" src="Resources/Photos/main4.jpg";></div>
@@ -44,22 +58,16 @@
     <div class="single-slide hide"><img oncontextmenu="return false;" class="cover" src="Resources/Photos/main7.jpg";></div>
     <div class="single-slide hide"><img oncontextmenu="return false;" class="cover" src="Resources/Photos/main8.jpg";></div>
     <div class="single-slide hide"><img oncontextmenu="return false;" class="cover" src="Resources/Photos/main9.jpg";></div>
-    
-</span>
-
-<span class="cs_menu menu_main" onclick="openNav()">&#9776; EGE ILICAK</span>
-<div id = "CurtainMenu" class="overlay">
-    <a class="closebtn" onclick="closeNav()">&times;</a>
-    <div id = "MainMenu" class="overlay-content"></div>
-    <script src="Controller/navigation.js"></script>
+    <div id="IC" class="navigationBox" > 1 / 9 </div> 
 </div>
 
-<script src="Controller/slider.js"></script>
 
+<script src="Controller/slider.js"></script>
+<script type="text/javascript"> SetTotalImageCount(9); </script>  
 <script type="text/javascript">
    StartAutoSlideShow();
 </script>
-
+-->
 
 </body>  
 </main>
