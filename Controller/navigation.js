@@ -1,5 +1,5 @@
 var m_menuEntries = ["PORTFOLIO", "ABOUT", "CONTACT"];
-var m_menuLinks =   ["PORTFOLIO", "about.html", "contact.html"];
+var m_menuLinks =   ["#", "about.html", "contact.html"];
 
 var m_portfolioEntries = ["Japanese Journey","Faces of Cuba"];
 var m_portfolioLinks = ["japan.html", "cuba.html"];
