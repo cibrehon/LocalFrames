@@ -11,7 +11,7 @@ function CheckPageWidth()
 {
     var size = { width: window.innerWidth || document.body.clientWidth }
 
-    if(size.width <600)
+    if(size.width <1000)
     {
         m_bMobile = true;
 
