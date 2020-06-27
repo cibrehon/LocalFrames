@@ -193,6 +193,15 @@ img.contain
     height: 100%;
     object-fit: scale-down;
 }
+
+@media only screen and (max-device-width: 1000px) 
+{
+   html
+   {
+        font-size: 3rem;
+   }
+}
+
 /*
 img.social
 {
