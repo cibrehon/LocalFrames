@@ -195,15 +195,19 @@ img.contain
 
 @media (max-width: 1000px)
 {
-   
+    html 
+    {
+        font-size: 2.5rem;
+    }
     span.leftMenu
     {
-        font-size: 3.5rem;
+        font-size: 1.5rem;
     }
     
     span.rightMenu
     {
-        font-size: 5rem;
+        font-size: 2.5rem;
+        line-height: 90%; /* Important to have a square hamburger menu! */
     }
 }
 
