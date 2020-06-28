@@ -203,6 +203,7 @@ img.contain
     span.rightMenu
     {
         font-size: 2rem;
+        height: auto;
     }
 }
 
