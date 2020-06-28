@@ -96,7 +96,6 @@ a:hover, button:hover
     position: relative;
     margin: auto; 
 
-
     font-size: 1.2rem;
     padding-top: 15px;
     
@@ -196,15 +195,9 @@ img.contain
 
 @media (max-width: 1000px)
 {
-   html
-   {
-        font-size: 3rem;
-   }
-
-    span.rightMenu
+    .headerMenu
     {
-        height: auto;
-        width: auto;
+        font-size: 3rem;
     }
 }
 
