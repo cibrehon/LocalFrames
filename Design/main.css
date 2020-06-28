@@ -200,6 +200,12 @@ img.contain
    {
         font-size: 3rem;
    }
+
+    span.rightMenu
+    {
+        height: auto;
+        width: auto;
+    }
 }
 
 /*
