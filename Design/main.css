@@ -95,8 +95,7 @@ a:hover, button:hover
     /* Set main menu as relative so that Image Lightbox can be positioned right below the menu */
     position: relative;
     margin: auto; 
-
-    font-size: 1.2rem;
+   
     padding-top: 15px;
     
     z-index: 10;
@@ -120,6 +119,7 @@ span.leftMenu
 }
 span.rightMenu
 {
+    font-size: 1.2rem;
     z-index: 10;
     position: absolute;
     text-align: right;
@@ -195,9 +195,15 @@ img.contain
 
 @media (max-width: 1000px)
 {
-    .headerMenu
+   
+    span.leftMenu
     {
         font-size: 3rem;
+    }
+    
+    span.rightMenu
+    {
+        font-size: 2.4rem;
     }
 }
 
