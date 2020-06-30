@@ -13,9 +13,14 @@ function CheckPageWidth()
 {
     //var size = { width: window.innerWidth || document.body.clientWidth }
 
-    var size = screen.width;
-    
-    if(size.width <1000)
+    var size = screen.width 
+    var pixelRatio = window.devicePixelRatio;
+
+    var realResSize = size / pixelRatio;
+    alert (size);
+    alert (pixelRatio);
+
+    if(realResSize.width <1000)
     {
 
         m_bMobile = true;
