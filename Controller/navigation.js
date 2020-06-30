@@ -16,9 +16,7 @@ function CheckPageWidth()
     var size = screen.width 
     var pixelRatio = window.devicePixelRatio;
 
-    var realResSize = size / pixelRatio;
-    alert (size);
-    alert (pixelRatio);
+    var realResSize = size * pixelRatio;
 
     if(realResSize.width <1000)
     {
