@@ -7,12 +7,17 @@ var m_portfolioLinks = ["japan.html", "cuba.html"];
 var m_bMobile = false;
 var m_bMobileMenuOpen = false;
 
+
+
 function CheckPageWidth()
 {
-    var size = { width: window.innerWidth || document.body.clientWidth }
+    //var size = { width: window.innerWidth || document.body.clientWidth }
 
+    var size = screen.width;
+    
     if(size.width <1000)
     {
+
         m_bMobile = true;
 
          // Close the mobile menu if exists
