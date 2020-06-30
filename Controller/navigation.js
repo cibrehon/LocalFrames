@@ -26,6 +26,9 @@ function CheckPageWidth()
     {
         m_bMobile = false;
 
+        // Close the mobile menu if exists
+        CloseMenu();
+
         // Create desktop menu
         CreateDesktopMenu();
     }
