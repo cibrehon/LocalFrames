@@ -23,6 +23,32 @@ div.lightbox
   user-select: none;
 }
 
+div.lightboxAbsolute
+{
+  display: block;
+ 
+  width: 100%;
+  height: 800px;
+
+  padding-top: auto;
+  overflow: hidden;
+  cursor: default;
+
+  /* Center it horizontally */
+  margin: auto; 
+  position: absolute;
+
+  /* Disable blue selection box */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightgray;
+}
+
 div.lightbox.Test
 {
   border-width: 5px;
@@ -67,6 +93,21 @@ div.lightbox.Test
   cursor: default;
   width: 100%;
   text-align: center;
+}
+.printLabel
+{
+  /*Navigation box is located inside the Lightbox, therefore use absolute position */
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  color: rgb(121, 121, 121);
+  z-index: 1;
+  
+  font-size: 1.4rem;
+  cursor: default;
+  width: 100%;
+  text-align: left;
 }
 
 .navigationBox.Test

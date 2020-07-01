@@ -2,12 +2,14 @@
 
     <!-- Set the general css settings for the whole page. -->
     <link rel="stylesheet" href="Design/main.css">
+    <link rel="stylesheet" href="Design/slideshow.css">
+    <link rel="stylesheet" href="Design/lightbox.css">
     <link rel="stylesheet" href="Design/mobilemenu.css">
    
 <head>
        <title>Ege Ilicak - PRINTS</title>          
 </head>
-<body onresize="CheckPageWidth()" >
+<body onkeydown="SlideByKey()" onresize="CheckPageWidth()" >
 
        <div class="headerMenu">
            <span id="LeftMenu" class="leftMenu"><a href="index.html">EGE ILICAK </a></span>  
@@ -19,7 +21,7 @@
        </div>
     
         <span class="description2">
-            All images on this site are available as professional prints.
+            All images on this site and images below are available as professional prints.
             <br><br>
             Two options of archival quality digital prints are available: Fuji Crystal Archive Matte Digital C-Print and Hahnemuehle Photo Rag Fine Art Print. Following print sizes are available:
             <br><br>
@@ -30,15 +32,23 @@
            The images are printed on demand and are inspected, dated, signed and stamped on an archival label that is affixed to the back of the print in person by Ege Ilicak.
             <br>       
             <br>    
-            
-           
+        
+            <div id="ImageLightBox" class="lightboxAbsolute">
+            <div class="titleBox"></div>
+            <div class="single-slide show"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Prints/1.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
+            <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Prints/2.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+            <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Prints/3.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+            <div class="single-slide hide"><img oncontextmenu="return false;" class="contain" src="Resources/Photos/Prints/4.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
+   
+            <div class="printLabel"> Print No: </div>
+            <div id="IC" class="navigationBox" >1 / 4 </div> <!-- Important: Set the total image count accordingly! -->   
+     </div>
         </span>
 
-      
-        
     
-      
 
+     <script src="Controller/slider.js"></script>
+     <script type="text/javascript"> SetTotalImageCount(4); </script>  <!-- Important: Set the total image count accordingly! -->
   
           
               
