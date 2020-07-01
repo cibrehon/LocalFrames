@@ -157,9 +157,33 @@ span.description
     left: 15%;
     right: 15%;
     text-align: left;
+    font-size: 1.2rem;    
+}
+
+span.description2
+{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    right: 15%;
+    text-align: left;
+    font-size: 1.2rem;    
+}
+
+table.prints
+{
+    position: absolute;
+    width: auto;
+    text-align: left;
     font-size: 1.2rem;
-    
-    
+    margin: auto;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: red;
+}
+td
+{
+    padding: 0px 50px 50px 50px;
 }
 
 /* Allows images to be shown sharper. */

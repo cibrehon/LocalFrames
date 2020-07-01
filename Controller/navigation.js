@@ -1,5 +1,5 @@
-var m_menuEntries = ["PORTFOLIO", "ABOUT", "CONTACT"];
-var m_menuLinks =   ["#", "about.html", "contact.html"];
+var m_menuEntries = ["PORTFOLIO", "PRINTS", "ABOUT", "CONTACT"];
+var m_menuLinks =   ["#", "prints.html", "about.html", "contact.html"];
 
 var m_portfolioEntries = ["Japanese Journey","Faces of Cuba"];
 var m_portfolioLinks = ["japan.html", "cuba.html"];
@@ -11,14 +11,14 @@ var m_bMobileMenuOpen = false;
 
 function CheckPageWidth()
 {
-    //var size = { width: window.innerWidth || document.body.clientWidth }
+    var size = { width: window.innerWidth || document.body.clientWidth }
 
     var logicalSize = screen.width 
     var pixelRatio = window.devicePixelRatio;
 
     var physicalScreenSize = logicalSize * pixelRatio;
 
-    if(physicalScreenSize <1000)
+    if(physicalScreenSize < 1000 || size.width < 1000  )
     {
 
         m_bMobile = true;
