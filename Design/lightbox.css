@@ -28,7 +28,7 @@ div.lightboxAbsolute
   display: block;
  
   width: 100%;
-  height: 800px;
+  height: 900px;
 
   padding-top: auto;
   overflow: hidden;
@@ -44,9 +44,6 @@ div.lightboxAbsolute
   -ms-user-select: none;
   user-select: none;
 
-  border-width: 3px;
-  border-style: solid;
-  border-color: lightgray;
 }
 
 div.lightbox.Test
