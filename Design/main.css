@@ -186,10 +186,8 @@ td
     padding: 0px 50px 50px 50px;
 }
 
-/* Allows images to be shown sharper. */
 img
-{
-    image-rendering: crisp-edges;
+{  
     /* Disable blue selection box */
     -moz-user-select: none;
     -webkit-user-select: none;
