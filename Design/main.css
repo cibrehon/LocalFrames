@@ -188,7 +188,7 @@ td
 
 img
 {  
-    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     /* Disable blue selection box */
     -moz-user-select: none;
     -webkit-user-select: none;
