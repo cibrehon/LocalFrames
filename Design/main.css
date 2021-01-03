@@ -217,6 +217,17 @@ img.cover
     object-fit: cover;
     position: fixed;
 }
+img.coverAlternative
+{
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    position: fixed;
+}
 
 /* Allow images to fit to their parent area. */
 img.scaledImage 
