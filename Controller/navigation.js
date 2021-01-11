@@ -1,7 +1,7 @@
 var m_menuEntries = ["PORTFOLIO", "PRINTS", "ABOUT", "CONTACT"];
 var m_menuLinks =   ["#", "prints.html", "about.html", "contact.html"];
 
-var m_portfolioEntries = ["Japanese Journey","Faces of Cuba", "Dreams from the Northern Country"];
+var m_portfolioEntries = ["Japanese Journey","Faces of Cuba", "Dreams from a Northern Country"];
 var m_portfolioLinks = ["japan.html", "cuba.html", "russia.html"];
 
 var m_bMobile = false;
