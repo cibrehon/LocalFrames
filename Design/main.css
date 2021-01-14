@@ -31,7 +31,7 @@ body.darkbackground
     background-color: rgb(30, 30, 30);
 }
 
-body.alternate
+body.Test
 {
     
     border-width: 5px;
@@ -216,8 +216,9 @@ img.cover
     width: 100%;
     object-fit: cover;
     position: fixed;
+    opacity: 1;
 }
-img.coverAlternative
+img.coverCentered
 {
     top: 0%;
     left: 0%;
@@ -242,7 +243,6 @@ img.scaledImage
 
     
 }
-
 
 @media (max-width: 1000px)
 {
