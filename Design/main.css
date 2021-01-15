@@ -1,6 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
 
 html *
 {
@@ -132,6 +132,36 @@ span.rightMenu.Test
     border-width: 5px;
     border-style: dotted;
     border-color: rebeccapurple;
+}
+div.CenterHeadLine
+{
+    font-size: 2rem;
+    text-align: center;
+    padding: 50px;
+}
+div.CenterMenu
+{
+    z-index: 10;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+
+    width: auto;
+    height: auto;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+a.CenteredLink
+{
+    text-align: center;
+    padding: 30px;  
+    font-weight: 300;
+
 }
 
 .menu_main
