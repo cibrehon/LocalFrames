@@ -1,0 +1,76 @@
+<main>
+  <!-- Set the general css settings for the whole page. -->
+  <link rel="stylesheet" href="Design/main.css" />
+  <link rel="stylesheet" href="Design/mobilemenu.css" />
+  <link rel="stylesheet" href="Design/responsiveGallery.css" />
+
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>Ege Ilicak | Portfolio</title>
+    <meta name="title" content="Ege Ilicak | Photographer" />
+    <meta name="description" content="Portfolio" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://egeilicak.com/" />
+    <meta property="og:title" content="Ege Ilicak | Photographer" />
+    <meta property="og:description" content="Portfolio" />
+    <meta
+      property="og:image"
+      content="https://egeilicak.com/Resources/Photos/main2.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://egeilicak.com/" />
+    <meta property="twitter:title" content="Ege Ilicak | Photographer" />
+    <meta property="twitter:description" content="Portfolio" />
+    <meta
+      property="twitter:image"
+      content="https://egeilicak.com/Resources/Photos/main2.jpg"
+    />
+
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="45D1GVF2rjrbKqV84eEkvT6AadyhlfalHpBzB1VXkVA"
+    />
+  </head>
+
+  <body onresize="CheckPageWidth()">
+    <div class="headerMenu">
+      <span id="LeftMenu" class="leftMenu"
+      ><a href="index.html">EGE ILICAK </a></span>
+
+      <span id="RightMenu" class="rightMenu" style="cursor: pointer"></span>
+      <span id="MobileMenu" class="MobileMenu">
+        <div id="MobileMenuContent" class="MobileMenuContent"></div>
+      </span>
+      <script src="Controller/navigation.js"></script>
+    </div>
+
+    <div class="row">
+        <a style="display:block" href="russia.html">
+
+      <div class="column">
+        <img src="Resources/Photos/pt/1.jpg" style="width: 100%" />
+        <p style="text-align: center; font-size: 1.5rem"; >DREAMS FROM A NORTHEN COUNTRY</p>
+      </div>
+        </a>
+
+        <a style="display:block" href="japan.html">
+      <div class="column">
+        <img src="Resources/Photos/pt/2.jpg" style="width: 100%" />
+        <p style="text-align: center; font-size: 1.5rem"; > TALES OF JAPAN </p>
+      </div>
+        </a>
+
+        <a style="display:block" href="cuba.html">
+      <div class="column">
+        <img src="Resources/Photos/pt/3.jpg" style="width: 100%" />
+        <p style="text-align: center; font-size: 1.5rem"; >FACES OF CUBA</p>
+      </div>
+        </a>
+    </div>
+  </body>
+</main>
