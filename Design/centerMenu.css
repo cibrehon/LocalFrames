@@ -16,7 +16,6 @@ div.CenterMenu {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 div.CenterMenu.Test {
   border-width: 5px;
@@ -31,6 +30,11 @@ a.centeredLink {
 }
 
 @media (max-width: 1000px) {
+  div.CenterHeadLine {
+
+    padding: 40px;
+  }
+
   a.centeredLink {
     display: block; /*Very important, otherwise padding does not work vertically. */
     padding: 20px;
