@@ -1,40 +1,38 @@
-div.CenterHeadLine
-{
-    font-size: 2.4rem;
-    text-align: center;
-    padding: 30px;
-    
+div.CenterHeadLine {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 30px;
 }
-div.CenterMenu
-{
-    z-index: 10;
-    font-size: 2rem;
-    position: relative;
-    text-align: center;
+div.CenterMenu {
+  z-index: 10;
+  font-size: 2rem;
+  text-align: center;
 
-    width: auto;
-    height: auto;
-    
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 95%;
+  height: auto;
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
-div.CenterMenu.Test
-{
-    border-width: 5px;
-    border-style: dotted;
-    border-color: rebeccapurple;
+div.CenterMenu.Test {
+  border-width: 5px;
+  border-style: dotted;
+  border-color: rebeccapurple;
 }
 
-a.centeredLink
-{
-    text-align: center;
-    padding: 30px;  
-    font-weight: 300;
+a.centeredLink {
+  text-align: center;
+  padding: 30px;
+  font-weight: 300;
 }
-a.centeredLink:hover
-{
-    color: gray !important;
+
+@media (max-width: 1000px) {
+  a.centeredLink {
+    display: block; /*Very important, otherwise padding does not work vertically. */
+    padding: 20px;
+  }
 }

@@ -1,20 +1,16 @@
-a
-{
-   color: white !important;
+a {
+  color: white !important;
 }
-a:hover, button:hover
-{
-    color: rgb(253, 255, 143) !important; 
+a:hover,
+button:hover {
+  color: gray !important;
 }
-span.leftMenu
-{
-    color: white !important;
+span.leftMenu {
+  color: white !important;
 }
-span.rightMenu
-{
-    color: white !important;
+span.rightMenu {
+  color: white !important;
 }
-.MobileMenu
-{
-    background-color: black !important;
+.MobileMenu {
+  background-color: black !important;
 }
