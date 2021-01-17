@@ -31,12 +31,11 @@ a.centeredLink {
 
 @media (max-width: 1000px) {
   div.CenterHeadLine {
-
-    padding: 40px;
+    padding: 50px;
   }
 
   a.centeredLink {
     display: block; /*Very important, otherwise padding does not work vertically. */
-    padding: 20px;
+    padding: 25px;
   }
 }
