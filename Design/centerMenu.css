@@ -30,8 +30,11 @@ a.centeredLink {
 }
 
 @media (max-width: 1000px) {
+  p {
+    margin: 15px;
+  }
   div.CenterHeadLine {
-    padding: 10px;
+    padding: 0px;
   }
 
   a.centeredLink {
