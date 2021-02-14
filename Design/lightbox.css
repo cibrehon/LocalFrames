@@ -22,6 +22,11 @@ div.lightbox
   user-select: none;
 }
 
+div.lightboxAuto
+{
+  height: auto;
+}
+
 div.lightboxAbsolute
 {
   display: block;
@@ -90,6 +95,23 @@ div.lightbox.Test
   width: 100%;
   text-align: center;
 }
+
+.navBox
+{
+ /*Navigation box is located inside the Lightbox, therefore use absolute position */
+ position: absolute;
+ bottom: auto;
+
+ display: block;
+ color: rgb(121, 121, 121);
+ z-index: 1;
+ 
+ font-size: 1.4rem;
+ cursor: default;
+ width: 100%;
+ text-align: center;
+}
+
 .printLabel
 {
   /*Navigation box is located inside the Lightbox, therefore use absolute position */

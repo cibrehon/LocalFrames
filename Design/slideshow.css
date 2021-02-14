@@ -29,4 +29,15 @@
     /* transition: opacity .4s; */
 }   
 
+.single-slide.Auto
+{
+    position: absolute;
+    padding-top: 5%;
+    width: 100%;
+    height: auto;
+    text-rendering: optimizeLegibility;
+    box-sizing:border-box;
+
+
+}
 
