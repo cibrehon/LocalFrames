@@ -1,64 +1,83 @@
 <main>
-
     <!-- Set the general css settings for the whole page. -->
-    <link rel="stylesheet" href="Design/main.css">
-    <link rel="stylesheet" href="Design/slideshow.css">
-    <link rel="stylesheet" href="Design/lightbox.css">
-    <link rel="stylesheet" href="Design/mobilemenu.css">
-   
-<head>
-       <title>Ege Ilicak - PRINTS</title>          
-</head>
-<body onkeydown="SlideByKey()" onresize="CheckPageWidth()" >
-
-       <div class="headerMenu">
-           <span id="LeftMenu" class="leftMenu"><a href="index.html">EGE ILICAK </a></span>  
-           <span id="RightMenu" class="rightMenu" style="cursor: pointer;"></span>
-           <span id ="MobileMenu" class="MobileMenu">
-              <div id="MobileMenuContent" class="MobileMenuContent"></div>
-           </span>
-           <script src="Controller/navigation.js"></script>
-       </div>
-    
-        <span class="description">
-            All images on this site are available as professional archival prints.
-            <br><br>
-            Prints are printed on Fuji Crystal Archive Matte paper. Following print sizes are available:
-            <br><br>
-            15x10 cm (50 Euros + Shipping) 
-            <br>
-            30x20 cm (80 Euros + Shipping) 
-            <br><br>
-           The images are printed on demand; and are inspected and signed on verso in person by Ege Ilicak. 
-           <br><br>
-           By the demand, museum art glass framing is also provided at an additional cost. 
-            <br>       
-            <br>    
-        
-       
-        </span>
-
-    
-
-     <script src="Controller/slider.js"></script>
-     <script type="text/javascript"> SetTotalImageCount(4); </script>  <!-- Important: Set the total image count accordingly! -->
+    <link rel="stylesheet" href="Design/main.css" />
+    <link rel="stylesheet" href="Design/mobilemenu.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   
-          
-              
-      
- </body>   
+    <head>
+      <!-- Primary Meta Tags -->
+      <title>Ege Ilicak | Artist Prints</title>
+      <meta name="title" content="Ege Ilicak | Photographer" />
+      <meta name="description" content="Artist Prints" />
+  
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://egeilicak.com/" />
+      <meta property="og:title" content="Ege Ilicak | Photographer" />
+      <meta property="og:description" content="Artist Prints" />
+      <meta
+        property="og:image"
+        content="https://egeilicak.com/Resources/Photos/Russia/13.jpg"
+      />
+  
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://egeilicak.com/" />
+      <meta property="twitter:title" content="Ege Ilicak | Photographer" />
+      <meta
+        property="twitter:description"
+        content="Artist Prints"
+/>
+      <meta
+        property="twitter:image"
+        content="https://egeilicak.com/Resources/Photos/Russia/13.jpg"
+      />
+  
+      <!-- Google Site Verification -->
+      <meta
+        name="google-site-verification"
+        content="45D1GVF2rjrbKqV84eEkvT6AadyhlfalHpBzB1VXkVA"
+      />
+    </head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <body onkeydown="SlideByKey()" onresize="CheckPageWidth()">
+      <div class="headerMenu">
+        <span id="LeftMenu" class="leftMenu"><a href="index.html">EGE ILICAK </a></span>
+        <span id="RightMenu" class="rightMenu" style="cursor: pointer"></span>
+        <span id="MobileMenu" class="MobileMenu">
+          <div id="MobileMenuContent" class="MobileMenuContent"></div>
+        </span>
+        <script src="Controller/navigation.js"></script>
+      </div>
+  
+      <div class="w3-row">
+        <p><br /></p>
+      </div>
+      <div class="w3-row">
+        <div class="w3-quarter w3-container"> <p></p> </div>
+        <div class="w3-half w3-container"> 
+       </br></br> 
+       </br></br> 
+       </br></br> 
+       </br></br> 
+          <h3>Artist Prints</h3>
+          <h5>
+            All images on this site are available as professional archival prints. 
+
+            Prints are printed on Fuji Crystal Archive Matte paper. Following print sizes are available: 
+        </br></br> 
+            15x10 cm (50 Euros + Shipping)  </br>
+            30x20 cm (80 Euros + Shipping) 
+        </br></br> 
+            The images are printed on demand; and are inspected and signed on verso in person by Ege Ilicak. 
+        </br></br> 
+            By the demand, museum art glass framing is also provided at an additional cost. 
+              </br></br> &copy; Ege Ilicak </br> All Rights Reserved </br>  
+          </h5>
+        </div>
+        <div class="w3-quarter w3-container"> <p></p> </div>
+      </div>
+ </body>  
 </main>
 
-
-
-<!-- 
-<div id="ImageLightBox" class="lightboxAbsolute">
-    <div class="single-slide show"><img oncontextmenu="return false;" class="scaledImage" src="Resources/Photos/Prints/2.jpg"; onclick="SetNextIndexbyPosition(event)"></div>                             
-    <div class="single-slide hide"><img oncontextmenu="return false;" class="scaledImage" src="Resources/Photos/Prints/1.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
-    <div class="single-slide hide"><img oncontextmenu="return false;" class="scaledImage" src="Resources/Photos/Prints/3.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
-    <div class="single-slide hide"><img oncontextmenu="return false;" class="scaledImage" src="Resources/Photos/Prints/4.jpg"; onclick="SetNextIndexbyPosition(event)"></div>
-
-    <div class="printLabel"> Print No: </div>
-    <div id="IC" class="navigationBox" >1 / 4 </div> 
-    </div>
--->
