@@ -29,6 +29,27 @@ function SetNextIndexbyPosition(e)
   ChangeImage (direction);
 }
 
+function PreLoadNextImage(pName)
+{
+  // Let browser to load the next image in the background.
+  var imgCache = new Image();
+  var a = m_currentIndexN + 2;
+
+  if (pName=="russia")
+  {
+    
+    imgCache.src=`Resources/Photos/Russia/${a}.jpg`;
+  }
+  else if (pName=="japan")
+  {
+    imgCache.src=`Resources/Photos/Japan/${a}.jpg`;
+  }
+  else if (pName=="cuba")
+  {
+    imgCache.src=`Resources/Photos/Cuba/${a}.jpg`;
+  }
+}
+
 function ChangeImage(dir)
 {
   
@@ -53,14 +74,17 @@ function ChangeImage(dir)
   if (pName=="russia")
   {
     document.getElementById("currentImage").src=`Resources/Photos/Russia/${m_currentIndexN+1}.jpg`;
+    PreLoadNextImage("russia", 2);
   }
   else if (pName=="japan")
   {
     document.getElementById("currentImage").src=`Resources/Photos/Japan/${m_currentIndexN+1}.jpg`;
+    PreLoadNextImage("japan", 2);
   }
   else if (pName=="cuba")
   {
     document.getElementById("currentImage").src=`Resources/Photos/Cuba/${m_currentIndexN+1}.jpg`;
+    PreLoadNextImage("cuba", 2);
   }
 }
 
