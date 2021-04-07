@@ -1,19 +1,19 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Jost&family=Kiwi+Maru&display=swap');
 
 html *
 {
-    
-    font-family: 'Jost', sans-serif !important;
+    font-family: 'Barlow Condensed', sans-serif !important;
     font-size: 100%;
     text-decoration: none;   
     text-rendering: optimizeLegibility;
-    
+    color: white !important;
 }
 
 body
 {
+    background-color: rgb(20, 20, 20);
     margin-left: 0;
     margin-top:0;
     margin-right: 0;
@@ -21,14 +21,11 @@ body
     padding-left: 0;
     padding-top:0;
     padding-right: 0;
-
-    background-color:white;
-
 }
 
-body.darkbackground
+body.Teal 
 {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(30, 53, 59);
 }
 
 body.Test
@@ -37,6 +34,15 @@ body.Test
     border-width: 5px;
     border-style: dotted;
     border-color: green;
+}
+
+h3.kiwi, p.kiwi, h5.kiwi
+{
+    font-family: 'Kiwi Maru', serif !important;
+}
+h3.jost, h5.jost
+{
+    font-family: 'Jost', sans-serif !important;
 }
 
 ul
@@ -78,18 +84,6 @@ button
     background-color: transparent;
 }
 
-a
-{
-   /* color: rgb(30, 30, 30); */
-   /*color: rgb(253, 255, 143);*/
-   color: black;
-}
-a:hover, button:hover
-{
-   color: gray;
-}
-
-
 .headerMenu
 {
     /* Set main menu as relative so that Image Lightbox can be positioned right below the menu */
@@ -123,31 +117,16 @@ span.rightMenu
     font-size: 1.5rem;
     z-index: 10;
     position: absolute;
-    text-align: right;
+    text-align: left;
     right: 0px;
     width: auto;
+
 }
 span.rightMenu.Test
 {
     border-width: 5px;
     border-style: dotted;
     border-color: rebeccapurple;
-}
-
-.menu_main
-{
-    color:white;
-}
-.menu_gallery
-{
-    color:black;
-}
-
-a.underlinedLink
-{
-    text-align: left;
-    font-size: 1.4rem;
-    text-decoration: underline;
 }
 
 span.description

@@ -3,5 +3,4 @@ https://egeilicak.com/japan.html
 https://egeilicak.com/cuba.html
 https://egeilicak.com/russia.html
 https://egeilicak.com/portfolio.html
-https://egeilicak.com/contact.html
-https://egeilicak.com/about.html
+https://egeilicak.com/info.html

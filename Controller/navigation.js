@@ -1,7 +1,7 @@
-var m_menuEntries = ["PORTFOLIO", "PRINTS", "ABOUT", "CONTACT"];
-var m_menuLinks =   ["#", "prints.html", "about.html", "contact.html"];
+var m_menuEntries = ["portfolio", "prints", "info"];
+var m_menuLinks =   ["#", "prints.html", "info.html"];
 
-var m_portfolioEntries = ["Japanese Journey","Faces of Cuba", "Dreams from a Northern Country"];
+var m_portfolioEntries = ["japanese journey","faces of cuba", "dreams from a northern country"];
 var m_portfolioLinks = ["japan.html", "cuba.html", "russia.html"];
 
 var m_bMobile = false;
@@ -62,7 +62,7 @@ function CreateMobileMenu()
         var menuLink = m_menuLinks[index];
         var finalLink; 
 
-        if(menuEntry == "PORTFOLIO")
+        if(menuEntry == "portfolio")
         {
             finalLink = document.createElement("A");   
             finalLink.id = menuEntry;
@@ -100,7 +100,7 @@ function CreateDesktopMenu()
         var blankLine = document.createElement("span"); 
         blankLine.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     
-        if(menuEntry == "PORTFOLIO")
+        if(menuEntry == "portfolio")
         {
             finalLink = document.createElement("A");
             finalLink.id = menuEntry;
@@ -162,7 +162,7 @@ function CreatePotfolioLinks()
     
         dropDown.appendChild(pLink);
     }
-    document.getElementById("PORTFOLIO").appendChild(dropDown);
+    document.getElementById("portfolio").appendChild(dropDown);
 }
 
 function ShowOrClose()
