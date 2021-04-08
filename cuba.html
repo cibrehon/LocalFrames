@@ -1,8 +1,7 @@
 <main>
        <!-- Set the general css settings for the whole page. -->
-       <link rel="stylesheet" href="Design/main.css" />
-       <link rel="stylesheet" href="Design/mobilemenu.css" />
-       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+       <link rel="stylesheet" href="Design/parent.css" />
+
      
        <head>
          <!-- Primary Meta Tags -->
@@ -43,10 +42,10 @@
        <meta name="viewport" content="width=device-width, initial-scale=1" />
        <body onkeydown="SlideByKey()" onresize="CheckPageWidth()">
          <div class="headerMenu">
-           <span id="LeftMenu" class="leftMenu"><a href="index.html">ege ilicak</a></span>
-           <span id="RightMenu" class="rightMenu" style="cursor: pointer"></span>
+           <span id="LeftMenu" class="leftMenu w3-xxlarge" ><a href="index.html">ege ilicak</a></span>
+           <span id="RightMenu" class="rightMenu w3-xlarge" style="cursor: pointer"></span>
            <span id="MobileMenu" class="MobileMenu">
-             <div id="MobileMenuContent" class="MobileMenuContent"></div>
+             <div id="MobileMenuContent" class="MobileMenuContent w3-xxlarge"></div>
            </span>
            <script src="Controller/navigation.js"></script>
          </div>
@@ -57,8 +56,8 @@
          <div class="w3-row">
            <div class="w3-quarter w3-container"> <p></p> </div>
            <div class="w3-half w3-container"> 
-             <h3 class="jost">Faces of Cuba</h3>
-             <h5 class="jost">
+             <h3 class="jost w3-xlarge">Faces of Cuba</h3>
+             <h5 class="jost w3-large">
               "Our Country is not just Cuba; our country is also humanity" - Fidel Castro
              </h5>
            </div>
@@ -68,7 +67,7 @@
          <div class="w3-row">
            <div class="w3-quarter w3-container"> <p></p> </div>
            <div class="w3-half w3-container"> 
-             <p class="kiwi" id="IC">1 / 12</p>
+             <p class="kiwi w3-large" id="IC">1 / 12</p>
              <!-- Important: Set the total image count accordingly! -->
            </div>
            <div class="w3-quarter w3-container"> <p></p> </div>
@@ -78,7 +77,7 @@
          <div class="w3-row">
            <div class="w3-quarter w3-container"> <p></p> </div>
            <div class="w3-half w3-container"> 
-               <img id="currentImage" alt="cuba" oncontextmenu="return false;" class="w3-image" src="Resources/Photos/Cuba/1.jpg"; onclick="SetNextIndexbyPosition(event)">
+               <img id="currentImage" alt="cuba" oncontextmenu="return false;" class="w3-image centered" src="Resources/Photos/Cuba/1.jpg"; onclick="SetNextIndexbyPosition(event)">
            <div class="w3-quarter w3-container"> <p></p> </div>
                
           

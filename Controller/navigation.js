@@ -98,7 +98,7 @@ function CreateDesktopMenu()
         var menuLink = m_menuLinks[index];
         var finalLink; 
         var blankLine = document.createElement("span"); 
-        blankLine.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        blankLine.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     
         if(menuEntry == "portfolio")
         {
@@ -159,7 +159,8 @@ function CreatePotfolioLinks()
         pLink.id = portfolioEntry;
         pLink.innerHTML = portfolioEntry + "<br>";
         pLink.href = portfolioLink;
-    
+        pLink.className ="w3-xlarge";
+
         dropDown.appendChild(pLink);
     }
     document.getElementById("portfolio").appendChild(dropDown);

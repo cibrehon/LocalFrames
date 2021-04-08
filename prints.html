@@ -1,8 +1,6 @@
 <main>
     <!-- Set the general css settings for the whole page. -->
-    <link rel="stylesheet" href="Design/main.css" />
-    <link rel="stylesheet" href="Design/mobilemenu.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="Design/parent.css" />
   
     <head>
       <!-- Primary Meta Tags -->
@@ -43,10 +41,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <body class="Teal" onkeydown="SlideByKey()" onresize="CheckPageWidth()">
       <div class="headerMenu">
-        <span id="LeftMenu" class="leftMenu"><a href="index.html">ege ilicak </a></span>
-        <span id="RightMenu" class="rightMenu" style="cursor: pointer"></span>
+        <span id="LeftMenu" class="leftMenu w3-xxlarge" ><a href="index.html">ege ilicak</a></span>
+        <span id="RightMenu" class="rightMenu w3-xlarge" style="cursor: pointer"></span>
         <span id="MobileMenu" class="MobileMenu">
-          <div id="MobileMenuContent" class="MobileMenuContent"></div>
+          <div id="MobileMenuContent" class="MobileMenuContent w3-xxlarge"></div>
         </span>
         <script src="Controller/navigation.js"></script>
       </div>
@@ -57,8 +55,8 @@
       <div class="w3-row">
         <div class="w3-quarter w3-container"> <p></p> </div>
         <div class="w3-half w3-container"> 
-          <h3>Artist Prints</h3>
-          <h5>
+          <h3 class="w3-xlarge">Artist Prints</h3>
+          <h5 class="w3-large">
             All images on this site are available as professional archival prints. 
 
             Prints are printed on Fuji Crystal Archive Matte paper. Following print sizes are available: 

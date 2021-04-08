@@ -1,11 +1,6 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Jost&family=Kiwi+Maru&display=swap');
-
 html *
 {
     font-family: 'Barlow Condensed', sans-serif !important;
-    font-size: 100%;
     text-decoration: none;   
     text-rendering: optimizeLegibility;
     color: white !important;
@@ -17,7 +12,7 @@ body
     margin-left: 0;
     margin-top:0;
     margin-right: 0;
-
+    
     padding-left: 0;
     padding-top:0;
     padding-right: 0;
@@ -109,60 +104,21 @@ span.leftMenu
     z-index: 10;
     position: relative;
     text-align: left;
-    left: 0px;
-    font-size: 2rem;
+    left: 10px;
 }
 span.rightMenu
 {
-    font-size: 1.5rem;
     z-index: 10;
     position: absolute;
     text-align: left;
     right: 0px;
     width: auto;
-
 }
 span.rightMenu.Test
 {
     border-width: 5px;
     border-style: dotted;
     border-color: rebeccapurple;
-}
-
-span.description
-{
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    right: 15%;
-    text-align: left;
-    font-size: 1.2rem;    
-}
-
-span.description2
-{
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    right: 15%;
-    text-align: left;
-    font-size: 1.2rem;    
-}
-
-table.prints
-{
-    position: absolute;
-    width: auto;
-    text-align: left;
-    font-size: 1.2rem;
-    margin: auto;
-    border-width: 5px;
-    border-style: dotted;
-    border-color: red;
-}
-td
-{
-    padding: 0px 50px 50px 50px;
 }
 
 img
@@ -176,14 +132,9 @@ img
 
 img.centered
 {
-    position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 90%;
-    object-fit: scale-down;
- 
 }
 img.cover
 {
@@ -223,18 +174,8 @@ img.scaledImage
 
 @media (max-width: 1000px)
 {
-    html 
-    {
-        font-size: 3rem;
-    }
-    span.leftMenu
-    {
-        font-size: 1.5rem;
-    }
-    
     span.rightMenu
     {
-        font-size: 2rem;
         line-height: 90%; /* Important to have a square hamburger menu! */
     }
 }
