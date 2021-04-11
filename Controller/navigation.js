@@ -51,7 +51,7 @@ function CreateMobileMenu()
     ResetMenuElements();
 
     // First, add the Hamburger Menu to the RightMenu
-    document.getElementById("RightMenu").innerHTML = "&#9776;";    
+    document.getElementById("RightMenu").innerHTML = "menu";
     document.getElementById("RightMenu").onclick = ShowOrClose;
     
    

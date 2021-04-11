@@ -39,7 +39,11 @@ h3.jost, h5.jost
 {
     font-family: 'Jost', sans-serif !important;
 }
-
+div.Header
+{
+  top: 15%;
+  color: white;
+}
 ul
 {
     margin: 0;
@@ -172,13 +176,6 @@ img.scaledImage
     max-height:100%; 
 }
 
-@media (max-width: 1000px)
-{
-    span.rightMenu
-    {
-        line-height: 90%; /* Important to have a square hamburger menu! */
-    }
-}
 
 /*
 img.social
