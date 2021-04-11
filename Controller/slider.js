@@ -30,7 +30,6 @@ function SetNextIndexbyPosition(e)
 }
 
 
-
 function ShowandHide(dir)
 {
   var direction = dir;

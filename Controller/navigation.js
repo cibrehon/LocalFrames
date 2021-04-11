@@ -29,6 +29,7 @@ function CheckPageWidth()
         // Create mobile curtain menu
         CreateMobileMenu();
 
+       
     }
     else
     {
@@ -43,6 +44,7 @@ function CheckPageWidth()
 }
 
 CheckPageWidth();
+
 
 // Mobile Menu
 function CreateMobileMenu()
@@ -205,10 +207,29 @@ function CreateSocialMediaIcons()
 */
 
 
+
  /*
 Close Button:
 
  // Set the inner HTML of close button
     document.getElementById("CloseButton").innerHTML = "&times;";
     <span id="CloseButton" onclick="CloseMenu()" style="cursor: pointer;" ></span>
+*/
+
+/*
+
+function ShowAllImages()
+{
+  if(m_bMobile)
+  {
+    var slideList = document.getElementsByClassName("w3-image");
+    
+    for (i = 0; i < slideList.length; i++) 
+    { 
+      slideList[i].classList.remove("w3-hide");
+      slideList[i].classList.add("w3-show");
+    }
+  }
+}
+
 */
