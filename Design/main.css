@@ -115,7 +115,7 @@ span.rightMenu
     z-index: 10;
     position: absolute;
     text-align: left;
-    right: 0px;
+    right: 10px;
     width: auto;
 }
 span.rightMenu.Test

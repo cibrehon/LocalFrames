@@ -13,8 +13,8 @@ function SlideByKey()
 
 function SetNextIndex(dir)
 {
-  //ShowandHide(dir);
-  ChangeImage(dir);
+  ShowandHide(dir);
+  //ChangeImage(dir);
 }
 
 function SetNextIndexbyPosition(e)
@@ -25,30 +25,65 @@ function SetNextIndexbyPosition(e)
    
   xCoordinate = e.clientX;
   var direction = FindPosition(xCoordinate);
- // ShowandHide(direction);
-  ChangeImage (direction);
+  ShowandHide(direction);
+  //ChangeImage (direction);
 }
 
-function PreLoadNextImage(pName)
+
+
+function ShowandHide(dir)
 {
-  // Let browser to load the next image in the background.
-  var imgCache = new Image();
-  var a = m_currentIndexN + 2;
+  var direction = dir;
+  var slideList = document.getElementsByClassName("w3-image");
+  var imageCounter = document.getElementById("IC");
 
-  if (pName=="russia")
+  var length = slideList.length;
+  
+  m_prevIndex = m_currentIndexN;
+  m_currentIndexN += direction; 
+
+  if(m_currentIndexN >= length)
   {
-    
-    imgCache.src=`Resources/Photos/Russia/${a}.jpg`;
+    m_currentIndexN = 0;
   }
-  else if (pName=="japan")
+  
+  if(m_currentIndexN < 0)
   {
-    imgCache.src=`Resources/Photos/Japan/${a}.jpg`;
+    m_currentIndexN = length - 1;
   }
-  else if (pName=="cuba")
-  {
-    imgCache.src=`Resources/Photos/Cuba/${a}.jpg`;
-  }
+  
+  imageCounter.innerText =  m_currentIndexN + 1 + " / " + m_totalImageCount;
+  slideList[m_currentIndexN].classList.remove("w3-hide");
+  slideList[m_currentIndexN].classList.add("w3-show");
+
+  slideList[m_prevIndex].classList.remove("w3-show");
+  slideList[m_prevIndex].classList.add("w3-hide");
 }
+
+// Checks the mouse position on the x-axis. Returns 1 if mouse is on the right side, returns -1 for the left side
+function FindPosition(x)
+{
+  var size = document.body.clientWidth;
+  if( x >= (size /2)){ return 1;} else { return -1;}
+}
+
+function SetTotalImageCount(imageCount)
+{
+  m_totalImageCount = imageCount;
+}
+
+/*
+function StartAutoSlideShow()
+{
+ // PlusSlides(1);
+ SetNextIndex(1);
+ setTimeout(StartAutoSlideShow, 3000);
+
+}
+*/
+
+
+/*
 
 function ChangeImage(dir)
 {
@@ -88,56 +123,25 @@ function ChangeImage(dir)
   }
 }
 
-// Checks the mouse position on the x-axis. Returns 1 if mouse is on the right side, returns -1 for the left side
-function FindPosition(x)
+
+function PreLoadNextImage(pName)
 {
-  var size = document.body.clientWidth;
-  if( x >= (size /2)){ return 1;} else { return -1;}
-}
+  // Let browser to load the next image in the background.
+  var imgCache = new Image();
+  var a = m_currentIndexN + 2;
 
-function SetTotalImageCount(imageCount)
-{
-  m_totalImageCount = imageCount;
-}
-
-/*
-function StartAutoSlideShow()
-{
- // PlusSlides(1);
- SetNextIndex(1);
- setTimeout(StartAutoSlideShow, 3000);
-
-}
-*/
-
-
-/*
-function ShowandHide(dir)
-{
-  var direction = dir;
-  var slideList = document.getElementsByClassName("single-slide");
-  var imageCounter = document.getElementById("IC");
-
-  var length = slideList.length;
-  
-  m_prevIndex = m_currentIndexN;
-  m_currentIndexN += direction; 
-
-  if(m_currentIndexN >= length)
+  if (pName=="russia")
   {
-    m_currentIndexN = 0;
+    
+    imgCache.src=`Resources/Photos/Russia/${a}.jpg`;
   }
-  
-  if(m_currentIndexN < 0)
+  else if (pName=="japan")
   {
-    m_currentIndexN = length - 1;
+    imgCache.src=`Resources/Photos/Japan/${a}.jpg`;
   }
-  
-  imageCounter.innerText =  m_currentIndexN + 1 + " / " + m_totalImageCount;
-  slideList[m_currentIndexN].classList.remove("hide");
-  slideList[m_currentIndexN].classList.add("show");
-
-  slideList[m_prevIndex].classList.remove("show");
-  slideList[m_prevIndex].classList.add("hide");
+  else if (pName=="cuba")
+  {
+    imgCache.src=`Resources/Photos/Cuba/${a}.jpg`;
+  }
 }
 */
