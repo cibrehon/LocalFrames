@@ -18,7 +18,7 @@ function CheckPageWidth()
 
     var physicalScreenSize = logicalSize * pixelRatio;
 
-    if(physicalScreenSize < 1000 || size.width < 1000  )
+    if(physicalScreenSize < 1400 || size.width < 1400  )
     {
 
         m_bMobile = true;

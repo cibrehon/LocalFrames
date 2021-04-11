@@ -42,7 +42,7 @@
     <body onkeydown="SlideByKey()" onresize="CheckPageWidth()">
       <div class="headerMenu">
         <span id="LeftMenu" class="leftMenu w3-xxlarge" ><a href="index.html">ege ilicak</a></span>
-        <span id="RightMenu" class="rightMenu w3-xlarge" style="cursor: pointer"></span>
+        <span id="RightMenu" class="rightMenu w3-xxlarge" style="cursor: pointer"></span>
         <span id="MobileMenu" class="MobileMenu">
           <div id="MobileMenuContent" class="MobileMenuContent w3-xxlarge"></div>
         </span>
@@ -55,8 +55,8 @@
       <div class="w3-row">
         <div class="w3-quarter w3-container"> <p></p> </div>
         <div class="w3-half w3-container"> 
-          <h3 class="jost w3-xlarge">Dreams from a Northern Country</h3>
-          <h5 class="jost w3-large">
+          <h3 class="w3-xlarge w3-center">Dreams from a Northern Country</h3>
+          <h5 class="jost w3-medium">
             In this body of work, Ilicak documents the daily lives of Russian
             people in the context of their social environment using candid and
             portrait photography techniques. Over the past years, Ilicak has
@@ -67,20 +67,13 @@
             Northern Country showcases the largest country's human landscapes;
             with their dreams and wishes, their religion and hard-to-reach hopes.
             While recording the inner prayers of the people, Ilicak introduces to
-            the viewer a nation who doesn't lose its hope.
+            the viewer a nation who doesn't lose its hope. 
           </h5>
+        </br>
         </div>
         <div class="w3-quarter w3-container"> <p></p> </div>
       </div>
       
-      <div class="w3-row">
-        <div class="w3-quarter w3-container"> <p></p> </div>
-        <div class="w3-half w3-container"> 
-          <p class="kiwi w3-large" id="IC">1 / 13</p>
-          <!-- Important: Set the total image count accordingly! -->
-        </div>
-        <div class="w3-quarter w3-container"> <p></p> </div>
-      </div>
 
       
       <div class="w3-row">
@@ -89,7 +82,17 @@
             <img id="currentImage" alt="russia" oncontextmenu="return false;" class="w3-image centered" src="Resources/Photos/Russia/1.jpg"; onclick="SetNextIndexbyPosition(event)">
         <div class="w3-quarter w3-container"> <p></p> </div>
             
-       
+        <div class="w3-row">
+          <div class="w3-quarter w3-container"> <p></p> </div>
+          <div class="w3-half w3-container"> 
+            <p class="kiwi w3-large w3-center" id="IC">1 / 13</p>
+            <!-- Important: Set the total image count accordingly! -->
+          </div>
+          <div class="w3-quarter w3-container"> <p></p> </div>
+        </div>
+
+        
+
       <script src="Controller/slider.js"></script>
       <script type="text/javascript">
         SetTotalImageCount(13);
