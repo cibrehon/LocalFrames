@@ -1,127 +1,108 @@
 <main>
-    <!-- Set the general css settings for the whole page. -->
-    <link rel="stylesheet" href="Design/parent.css" />
-  
-    <head>
-      <!-- Primary Meta Tags -->
-      <title>Ege Ilicak | Dreams from a Northern Country</title>
-      <meta name="title" content="Ege Ilicak | Photographer" />
-      <meta name="description" content="Dreams from a Northern Country" />
-  
-      <!-- Open Graph / Facebook -->
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://egeilicak.com/" />
-      <meta property="og:title" content="Ege Ilicak | Photographer" />
-      <meta property="og:description" content="Dreams from a Northern Country" />
-      <meta
-        property="og:image"
-        content="https://egeilicak.com/Resources/Photos/Russia/13.jpg"
-      />
-  
-      <!-- Twitter -->
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://egeilicak.com/" />
-      <meta property="twitter:title" content="Ege Ilicak | Photographer" />
-      <meta
-        property="twitter:description"
-        content="Dreams from a Northern Country"
+  <!-- Set the general css settings for the whole page. -->
+  <link rel="stylesheet" href="Design/parent.css" />
+
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>Ege Ilicak | Dreams from a Northern Country</title>
+    <meta name="title" content="Ege Ilicak | Photographer" />
+    <meta name="description" content="Dreams from a Northern Country" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://egeilicak.com/" />
+    <meta property="og:title" content="Ege Ilicak | Photographer" />
+    <meta property="og:description" content="Dreams from a Northern Country" />
+    <meta
+      property="og:image"
+      content="https://egeilicak.com/Resources/Photos/Russia/13.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://egeilicak.com/" />
+    <meta property="twitter:title" content="Ege Ilicak | Photographer" />
+    <meta
+      property="twitter:description"
+      content="Dreams from a Northern Country"
 />
-      <meta
-        property="twitter:image"
-        content="https://egeilicak.com/Resources/Photos/Russia/13.jpg"
-      />
+    <meta
+      property="twitter:image"
+      content="https://egeilicak.com/Resources/Photos/Russia/13.jpg"
+    />
+
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="45D1GVF2rjrbKqV84eEkvT6AadyhlfalHpBzB1VXkVA"
+    />
+  </head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <body onkeydown="SlideByKey()" onresize="CheckPageWidth()">
+    <div class="headerMenu">
+      <span id="LeftMenu" class="leftMenu w3-xxlarge" ><a href="index.html">ege ilicak</a></span>
+      <span id="RightMenu" class="rightMenu w3-xxlarge" style="cursor: pointer"></span>
+      <span id="MobileMenu" class="MobileMenu">
+        <div id="MobileMenuContent" class="MobileMenuContent w3-xxlarge"></div>
+      </span>
+      <script src="Controller/navigation.js"></script>
+    </div>
+
+   
+    <div class="w3-container w3-center w3-xlarge w3-mobile">
+     <p>Dreams from a Northern Country</p>
+   </div>
+
+   <div class="w3-container w3-center w3-xlarge w3-mobile centeredPanel">
+     <img class="scaledImage w3-show" src="Resources/Photos/Russia/01.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/02.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/03.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/04.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/05.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/06.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/07.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/08.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/09.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/10.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/11.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/12.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/13.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/14.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+     <img class="scaledImage w3-hide" src="Resources/Photos/Russia/15.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)" onclick="SetNextIndexbyPosition(event)"> 
+   </div>
   
-      <!-- Google Site Verification -->
-      <meta
-        name="google-site-verification"
-        content="45D1GVF2rjrbKqV84eEkvT6AadyhlfalHpBzB1VXkVA"
-      />
-    </head>
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <body onkeydown="SlideByKey()" onresize="CheckPageWidth()">
-      <div class="headerMenu">
-        <span id="LeftMenu" class="leftMenu w3-xxlarge" ><a href="index.html">ege ilicak</a></span>
-        <span id="RightMenu" class="rightMenu w3-xxlarge" style="cursor: pointer"></span>
-        <span id="MobileMenu" class="MobileMenu">
-          <div id="MobileMenuContent" class="MobileMenuContent w3-xxlarge"></div>
-        </span>
-        <script src="Controller/navigation.js"></script>
-      </div>
-  
-      <div class="w3-row">
-        <p><br /></p>
-      </div>
-      <div class="w3-row">
-        <div class="w3-quarter w3-container"> <p></p> </div>
-        <div class="w3-half w3-container"> 
-          <h3 class="w3-xlarge w3-center">Dreams from a Northern Country</h3>
-          <h5 class="jost w3-medium">
-            In this body of work, Ilicak documents the daily lives of Russian
-            people in the context of their social environment using candid and
-            portrait photography techniques. Over the past years, Ilicak has
-            visited Russia extensively and travelled from St. Petersburg up to
-            Makarovo, Bashkortostan, the first ethnic autonomy of Russia located
-            between the Volga River and the Ural Mountains, to collect visuals for
-            his personal project: Dreams from a Northern Country. Dreams from a
-            Northern Country showcases the largest country's human landscapes;
-            with their dreams and wishes, their religion and hard-to-reach hopes.
-            While recording the inner prayers of the people, Ilicak introduces to
-            the viewer a nation who doesn't lose its hope. 
-          </h5>
-        </br>
-        </div>
-        <div class="w3-quarter w3-container"> <p></p> </div>
-      </div>
-            
-      <div class="w3-row">
-        <div class="w3-quarter w3-container"> <p></p> </div>
-        <div class="w3-half w3-container"> 
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-show" src="Resources/Photos/Russia/01.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)"> 
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/02.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/03.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/04.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/05.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/06.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/07.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/08.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/09.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/10.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/11.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/12.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/13.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/14.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
-          <img oncontextmenu="return false;" class="w3-image centered w3-padding-16 w3-hide" src="Resources/Photos/Russia/15.jpg"; loading="lazy" onclick="SetNextIndexbyPosition(event)">
+   <div class="w3-container w3-center w3-xlarge w3-mobile">
+    <p class="kiwi w3-large w3-center" id="IC">1 / 15</p>
+  </div>
 
-        <div class="w3-quarter w3-container"> <p></p> </div>
-            
-        <div class="w3-row">
-          <div class="w3-quarter w3-container"> <p></p> </div>
-          <div class="w3-half w3-container"> 
-            <p class="kiwi w3-large w3-center" id="IC">1 / 15</p>
 
-          </div>
-          <div class="w3-quarter w3-container"> <p></p> </div>
-        </div>
-
-      
-  
-      <!-- Important: Set the total image count accordingly! -->
-      <script src="Controller/slider.js"></script>
-      <script type="text/javascript">
-        SetTotalImageCount(15);
-      </script>
-    </body>
-  </main>
-  
-
- <!-- 
-  <img id="currentImage" alt="russia" oncontextmenu="return false;" class="w3-image centered" src="Resources/Photos/Russia/1.jpg"; onclick="SetNextIndexbyPosition(event)">
-
-              <p class="kiwi w3-large w3-center" id="IC">1 / 13</p>
-            Important: Set the total image count accordingly!
+  <div class="w3-row w3-center w3-mobile">
+    <div class="w3-col w3-mobile" style="width:20%"><p></p></div>
+    <div class="w3-col w3-mobile" style="width:60%">
+      <h5 class="jost w3-medium w3-left-align w3-padding-large">
+        In this body of work, Ilicak documents the daily lives of Russian
+        people in the context of their social environment using candid and
+        portrait photography techniques. Over the past years, Ilicak has
+        visited Russia extensively and travelled from St. Petersburg up to
+        Makarovo, Bashkortostan, the first ethnic autonomy of Russia located
+        between the Volga River and the Ural Mountains, to collect visuals for
+        his personal project: Dreams from a Northern Country. Dreams from a
+        Northern Country showcases the largest country's human landscapes;
+        with their dreams and wishes, their religion and hard-to-reach hopes.
+        While recording the inner prayers of the people, Ilicak introduces to
+        the viewer a nation who doesn't lose its hope. 
+      </h5>
+  </div>
+    <div class="w3-col w3-mobile" style="width:20%"><p></p></div>
+  </div>
 
 
 
-
-  -->
+    <script src="Controller/slider.js"></script>
+    <script type="text/javascript">
+      SetTotalImageCount(15);
+    </script>
+    <!-- Important: Set the total image count accordingly! -->
+  </body>
+</main>
