@@ -22,6 +22,7 @@
     transition: all 0.2s ease-in-out 0s;
     opacity: 0;
     visibility: hidden;
+    color: white !important;
 }
 
 .MobileMenu.show 
