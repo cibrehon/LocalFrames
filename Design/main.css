@@ -1,14 +1,13 @@
 html *
 {
-    font-family: 'Barlow Condensed', sans-serif !important;
+    font-family: 'EB Garamond', serif !important;
     text-decoration: none;   
     text-rendering: optimizeLegibility;
-    color: white !important;
 }
 
 body
 {
-    background-color: rgb(20, 20, 20);
+    background-color: white;
     margin-left: 0;
     margin-top:0;
     margin-right: 0;
@@ -21,8 +20,13 @@ body
 body.Teal 
 {
     background-color: rgb(30, 53, 59);
-}
+    color: white;
 
+}
+body.StartPage
+{
+    color: white !important;
+}
 body.Test
 {
     
@@ -31,13 +35,9 @@ body.Test
     border-color: green;
 }
 
-h3.kiwi, p.kiwi, h5.kiwi
-{
-    font-family: 'Kiwi Maru', serif !important;
-}
 h3.jost, h5.jost
 {
-    font-family: 'Jost', sans-serif !important;
+    font-family: sans-serif !important;
 }
 div.Header
 {
@@ -88,8 +88,8 @@ button
     /* Set main menu as relative so that Image Lightbox can be positioned right below the menu */
     position: relative;
     margin: auto; 
-   
-    padding-top: 15px;
+
+    /* padding-top: 15px; */
     
     z-index: 10;
     width: 98%;
@@ -109,6 +109,7 @@ span.leftMenu
     position: relative;
     text-align: left;
     left: 10px;
+    /*! An extra padding is added in the index.html by w3.css padding class */
 }
 span.rightMenu
 {

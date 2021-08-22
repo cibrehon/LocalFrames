@@ -28,8 +28,10 @@
     <meta name="google-site-verification" content="45D1GVF2rjrbKqV84eEkvT6AadyhlfalHpBzB1VXkVA" />
 </head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<body onresize="CheckPageWidth()" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+<body class="StartPage" onresize="CheckPageWidth()" >
 
 <!-- 
 <div class="headerMenu">
@@ -41,22 +43,44 @@
     <script src="Controller/navigation.js"></script>
 </div>
 -->
+<img src="Resources/Photos/main.jpg" class="cover">
 
-<div class="w3-display-container" style="height:100%;">
-    <img src="Resources/Photos/main.jpg" class="cover">
-    <div class="w3-padding w3-display-left Header"> <a class="w3-xxxlarge w3-padding-large w3-mobile">ege ilicak</a></div> 
-    <div class="w3-padding w3-display-left">
-        <a class="w3-xxlarge w3-padding-large w3-mobile" href="portfolio.html"> portfolio</a>
-        <a class="w3-xxlarge w3-padding-large w3-mobile" href="prints.html"> prints</a>
-        <a class="w3-xxlarge w3-padding-large w3-mobile" href="about.html"> info</a>
-    </div>
-</div>
+      <div class="headerMenu w3-padding-large">
+        <span id="LeftMenu" class="leftMenu w3-xxlarge" ><a href="index.html">Ege Ilicak</a></span>
+        <span id="RightMenu" class="rightMenu w3-xxlarge" style="cursor: pointer"></span>
+        <span id="MobileMenu" class="MobileMenu">
+          <div id="MobileMenuContent" class="MobileMenuContent w3-xxlarge"></div>
+        </span>
+        <script src="Controller/navigation.js"></script>
+      </div>
+
+   
+
+
+
+<!-- <div class="w3-row w3-padding-24 w3-mobile">
+    <div class="w3-half w3-container"> <div>
+     <div class="w3-col w3-mobile" style="width:35%"><a class="w3-xxlarge w3-padding-large">Ege Ilicak</a></div>
+         
+     <div class="w3-col w3-mobile" style="width:35%">
+         <a class="w3-xxlarge w3-padding-large w3-mobile" href="portfolio.html"> portfolio</a>
+         <a class="w3-xxlarge w3-padding-large w3-mobile" href="prints.html"> prints</a>
+         <a class="w3-xxlarge w3-padding-large w3-mobile" href="prints.html"> publications</a>
+         <a class="w3-xxlarge w3-padding-large w3-mobile" href="about.html"> bio & contact</a>
+     </div>
+     <div class="w3-col" style="width:15%"><p></p></div>
+ </div> -->
 
 
 
 
 <!-- 
-    
+       <div class="w3-padding w3-display-left Header"> <a class="w3-xxxlarge w3-padding-large w3-mobile">ege ilicak</a></div> 
+    <div class="w3-padding w3-display-left">
+        <a class="w3-xxlarge w3-padding-large w3-mobile" href="portfolio.html"> portfolio</a>
+        <a class="w3-xxlarge w3-padding-large w3-mobile" href="prints.html"> prints</a>
+        <a class="w3-xxlarge w3-padding-large w3-mobile" href="about.html"> info</a>
+    </div>
     
 <div id="ImageLightBox" class="lightbox.cover">
     <div class="single-slide show"><img oncontextmenu="return false;" class="cover" src="Resources/Photos/main1.jpg";></div>
