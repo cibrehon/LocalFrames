@@ -41,7 +41,6 @@ h3.jost, h5.jost
 }
 div.Header
 {
-  top: 15%;
   color: white;
 }
 ul
@@ -53,7 +52,6 @@ ul
     margin-block-end: 0;
     padding-inline-start: 0;
 }
-
 button
 {
     padding: 0px;
@@ -88,12 +86,9 @@ button
     /* Set main menu as relative so that Image Lightbox can be positioned right below the menu */
     position: relative;
     margin: auto; 
-
-    /* padding-top: 15px; */
-    
     z-index: 10;
-    width: 98%;
     height: auto;
+      /* padding-top: 15px; */
     
 }
 .headerMenu.Test
@@ -103,28 +98,31 @@ button
     border-color: red;
 }
 
-span.leftMenu
+span.Menu
 {
     z-index: 10;
     position: relative;
     text-align: left;
-    left: 10px;
-    /*! An extra padding is added in the index.html by w3.css padding class */
-}
-span.rightMenu
-{
-    z-index: 10;
-    position: absolute;
-    text-align: left;
-    right: 10px;
     width: auto;
+    height: auto;
 }
-span.rightMenu.Test
+span.Menu.Left
+{
+    float: left;
+}
+
+span.Menu.Right
+{
+    float: right;
+}
+
+span.Menu.Test
 {
     border-width: 5px;
     border-style: dotted;
     border-color: rebeccapurple;
 }
+
 
 img
 {  

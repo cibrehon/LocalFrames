@@ -13,7 +13,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(230, 230, 230);
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -22,7 +22,8 @@
     transition: all 0.2s ease-in-out 0s;
     opacity: 0;
     visibility: hidden;
-    color: white !important;
+    color: black !important;
+   
 }
 
 .MobileMenu.show 

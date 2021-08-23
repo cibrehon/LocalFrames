@@ -99,8 +99,8 @@ function CreateDesktopMenu()
         var menuEntry = m_menuEntries[index];
         var menuLink = m_menuLinks[index];
         var finalLink; 
-        var blankLine = document.createElement("span"); 
-        blankLine.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        // var blankLine = document.createElement("span"); 
+        // blankLine.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     
         if(menuEntry == "portfolio")
         {
@@ -118,8 +118,9 @@ function CreateDesktopMenu()
         finalLink.id = menuEntry;
         finalLink.innerHTML = menuEntry;
         finalLink.href = menuLink;
+        finalLink.className ="w3-padding-large";
         document.getElementById("RightMenu").appendChild(finalLink);
-        document.getElementById("RightMenu").appendChild(blankLine);
+        // document.getElementById("RightMenu").appendChild(blankLine);
     }
     CreatePotfolioLinks();
 }
