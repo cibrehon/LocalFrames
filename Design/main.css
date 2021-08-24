@@ -60,6 +60,11 @@ button
     background-color: white;
     display: inline-block;
 }
+.paddingLeftRight
+{
+    padding-left: 24px;
+    padding-right: 24px;
+}
 .dropdownContent 
 {
     display: none;

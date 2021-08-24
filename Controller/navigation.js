@@ -162,7 +162,7 @@ function CreatePotfolioLinks()
         pLink.id = portfolioEntry;
         pLink.innerHTML = portfolioEntry + "<br>";
         pLink.href = portfolioLink;
-        pLink.className ="w3-xlarge";
+        pLink.className ="w3-xlarge paddingLeftRight";
 
         dropDown.appendChild(pLink);
     }
