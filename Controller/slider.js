@@ -63,7 +63,14 @@ function ShowandHide(dir)
 function FindPosition(x)
 {
   var size = document.body.clientWidth;
-  if( x >= (size /2)){ return 1;} else { return -1;}
+  if( x >= (size /2))
+  { 
+    return 1;
+  }
+  else 
+  { 
+    return -1;
+  }
 }
 
 function SetTotalImageCount(imageCount)
