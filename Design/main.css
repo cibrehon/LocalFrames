@@ -182,7 +182,7 @@ img.scaledImage
 {
     margin: auto;
     object-fit: scale-down;
-    image-rendering:crisp-edges;
+    image-rendering:auto;
     max-width:100%;
     max-height:100%; 
     cursor: pointer;
