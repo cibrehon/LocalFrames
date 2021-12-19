@@ -91,7 +91,6 @@ img.centered {
   margin-right: auto;
   cursor: pointer;
 }
-
 img.cover {
   top: 0%;
   left: 0%;
@@ -112,6 +111,15 @@ img.coverCentered {
   width: 100%;
   object-fit: scale-down;
   position: fixed;
+}
+
+.imageContainer
+{
+  top: 10%;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 80%;
 }
 
 /* Allow images to fit to their parent area. */
