@@ -1,5 +1,5 @@
-var m_menuEntries = ["portfolio", "publications", "prints", "info"];
-var m_menuLinks = ["portfolio.html", "publications.html", "prints.html", "about.html"];
+var m_menuEntries = ["portfolio", "publications", "info"];
+var m_menuLinks = ["portfolio.html", "publications.html", "about.html"];
 
 var m_bMobile = false;
 var m_bMobileMenuOpen = false;
@@ -75,7 +75,7 @@ function CreateDesktopMenu() {
         finalLink.id = menuEntry;
         finalLink.innerHTML = menuEntry;
         finalLink.href = menuLink;
-        finalLink.className = "w3-padding-large";
+        finalLink.className = "w3-margin-left";
         document.getElementById("RightMenu").appendChild(finalLink);
     }
 }
