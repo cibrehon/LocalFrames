@@ -123,7 +123,7 @@ img.coverCentered {
 }
 
 /* Allow images to fit to their parent area. */
-img.scaledImage {
+.scaledViewer {
   margin: auto;
   object-fit: scale-down;
   image-rendering: auto;
