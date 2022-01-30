@@ -33,7 +33,7 @@ function SetNextIndexbyPosition(e)
 function ShowandHide(dir)
 {
   var direction = dir;
-  var slideList = document.getElementsByClassName("scaledViewer");
+  var slideList = document.getElementsByClassName("w3-image");
   var imageCounter = document.getElementById("IC");
 
   var length = slideList.length;

@@ -70,6 +70,10 @@ img {
   height: auto;
 }
 
+img
+{
+cursor: pointer;
+}
 .MouseHand
 {
     cursor: pointer;
