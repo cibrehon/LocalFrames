@@ -1,4 +1,4 @@
-var m_menuEntries = ["portfolio", "publications", "info"];
+var m_menuEntries = ["portfolio", "featured", "info"];
 var m_menuLinks = ["portfolio.html", "publications.html", "about.html"];
 
 var m_bMobile = false;
