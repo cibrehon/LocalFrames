@@ -1,5 +1,5 @@
 html * {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Spectral', serif;
   text-decoration: none;
   text-rendering: optimizeLegibility;
 }
@@ -16,7 +16,7 @@ body {
   color: black;
 }
 
-div.portfolioText
+.whiteText
 {
   color: white;
 }
@@ -70,10 +70,7 @@ img {
   height: auto;
 }
 
-img
-{
-cursor: pointer;
-}
+
 .MouseHand
 {
     cursor: pointer;
@@ -104,7 +101,6 @@ img.cover {
   width: 100%;
   object-fit: cover;
   position: fixed;
-  opacity: 1;
 }
 img.coverCentered {
   top: 0%;
@@ -115,6 +111,16 @@ img.coverCentered {
   width: 100%;
   object-fit: scale-down;
   position: fixed;
+}
+img.coverAbsolute {
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  position:relative;
 }
 
 .imageContainer
